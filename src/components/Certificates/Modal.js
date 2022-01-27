@@ -16,7 +16,7 @@ const ModalContainer = styled.div`
     z-index:10;
 
     img{
-        transform: scale(4);
+        height: 90vh;
     }
 `
 

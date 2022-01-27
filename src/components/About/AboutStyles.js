@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import img from '../../assets/img/camera.jpeg'
 import { device } from '../../assets/media';
+import img2 from '../../assets/img/light-bgr.svg';
 
 export const Section = styled.section`
     margin: 4rem 2rem;
@@ -13,6 +14,32 @@ export const Container = styled.div`
     justify-content: space-between;
     margin: auto;
     align-items: center;
+    position:relative;
+
+    &::before{
+        content:"";
+        background-image: url(${img2});
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:300px;
+        height:300px;
+        position:absolute;
+        right:-30px;
+        top:-30px;
+    }
+
+    &::after{
+        content:"";
+        background-image: url(${img2});
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:120px;
+        height:120px;
+        position:absolute;
+        bottom:80px;
+        left:50%;
+
+    }
 
     @media ${device.tablet}{
         flex-direction: row;
@@ -39,7 +66,8 @@ export const StyledImg = styled.div`
 
 `
 export const AboutInfo = styled.div`
-
+    position: relative;
+    z-index:1;
 @media ${device.tablet}{
     width:50%;
 }
