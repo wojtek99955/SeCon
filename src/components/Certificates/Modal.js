@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
+import { device } from '../../assets/media';
 
 const ModalContainer = styled.div`
     width:100%;
@@ -16,17 +17,23 @@ const ModalContainer = styled.div`
     z-index:10;
 
     img{
-        height: 90vh;
+        width:90%;
+        max-width: 950px;
     }
 `
 
 const CloseBtn = styled(CloseOutline)`
-width:3rem;
+width:2rem;
 color:white;
 position: fixed;
 top: 10px;
 right:10px;
 cursor: pointer;
+
+@media ${device.tablet}{
+    width: 3rem;
+}
+
 `
 function Modal({ modal, imgsrc, setModal }) {
 
@@ -39,7 +46,7 @@ function Modal({ modal, imgsrc, setModal }) {
 
 
         <ModalContainer model={modal} onClick={handleClose}>
-            <img src={imgsrc} alt="" srcset="" />
+            <img src={imgsrc} alt="certificate" srcset="" />
             <CloseBtn />
         </ModalContainer>
     )

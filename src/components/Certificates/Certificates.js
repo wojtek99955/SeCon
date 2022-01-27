@@ -14,9 +14,6 @@ function Certificates() {
         setModal(true);
     }
 
-    console.log("toto" + certificates[0].src);
-
-
     return (
         <Container>
             <h2>Certyfikaty</h2>

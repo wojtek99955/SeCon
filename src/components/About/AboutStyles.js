@@ -26,6 +26,11 @@ export const Container = styled.div`
         position:absolute;
         right:-30px;
         top:-30px;
+        display: none;
+
+        @media ${device.tablet}{
+            display: block;
+        }
     }
 
     &::after{

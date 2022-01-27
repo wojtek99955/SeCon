@@ -29,7 +29,6 @@ const MainSection = styled.div`
     margin: auto;
     display: flex;
     flex-direction: column;
-    position: relative;
 
     h1 {
         color: white;
@@ -55,22 +54,15 @@ const MainSection = styled.div`
         font-size: 1rem;
         margin-top: 2rem;
         cursor: pointer;
-        align-self: flex-start;
-        margin: auto;
         margin-top: 3rem;
         border-radius: 10px;
         font-weight: 600;
         transition-property: background-color;
         transition-duration: 300ms;
-        position: absolute;
-        z-index: 1;
-        left: 50%;
-        margin-left: -100px;
-        top: 10rem;
+        align-self: center;
 
         &:hover {
             background-color: transparent;
-
             animation: ${scaleAnimation};
             animation-duration: 300ms;
             animation-iteration-count: infinite;
