@@ -4,7 +4,7 @@ import { MdOutlineNavigateNext } from 'react-icons/md';
 import { MdOutlineNavigateBefore } from 'react-icons/md';
 
 export const Section = styled.section`
-    padding: 1rem ;
+    padding: 5rem 1rem ;
 `
 export const Container = styled.div`
     max-width: 1200px;

@@ -9,12 +9,14 @@ import { theme } from './assets/styles/theme'
 import Services from './components/Services/Services'
 import OurWork from './components/OurWork/OurWork'
 import Certificates from './components/Certificates/Certificates'
+import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton'
 
 function App() {
     return (
         <div className="App">
             <GlobalStyles />
             <ThemeProvider theme={theme}>
+                <ScrollTopButton />
                 <Header />
                 <MainPage />
                 <About />
