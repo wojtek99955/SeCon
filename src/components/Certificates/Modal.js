@@ -17,8 +17,7 @@ const ModalContainer = styled.div`
     z-index:10;
 
     img{
-        width:90%;
-        max-width: 950px;
+        height:90vh;
     }
 `
 
