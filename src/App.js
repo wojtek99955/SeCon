@@ -13,7 +13,7 @@ import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton'
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <GlobalStyles />
             <ThemeProvider theme={theme}>
                 <ScrollTopButton />

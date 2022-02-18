@@ -17,24 +17,24 @@ function Services() {
                     <Monitoring>
                         <CameraIcon />
                         <h3>Lorem ipsum</h3>
-                        {monitoringServices.map((service) => {
-                            return (
-                                <ul>
-                                    <li><CheckMark />{service}</li>
-                                </ul>
-                            )
-                        })}
+                        <ul>
+                            {monitoringServices.map((service, id) => {
+                                return (
+                                    <li key={id}><CheckMark />{service}</li>
+                                )
+                            })}
+                        </ul>
                     </Monitoring>
                     <Measurement>
                         <ElectricalIcon />
                         <h3>Lorem Ipsum</h3>
-                        {measurementServices.map((service) => {
-                            return (
-                                <ul>
-                                    <li><CheckMarkSecond />{service}</li>
-                                </ul>
-                            )
-                        })}
+                        <ul>
+                            {measurementServices.map((service, id) => {
+                                return (
+                                    <li key={id}><CheckMarkSecond />{service}</li>
+                                )
+                            })}
+                        </ul>
                     </Measurement>
                 </ServicesWrapper>
             </Container>

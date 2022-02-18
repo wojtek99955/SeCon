@@ -56,45 +56,45 @@ function OurWork() {
                     <h2>Realizacje</h2>
                     <StyledSlider  {...settings}>
                         <FlipCard>
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="side">
+                            <div className="card-container">
+                                <div className="card">
+                                    <div className="side">
                                         <h2>Text</h2>
-                                        <img src={img1} alt="" srcset="" />
+                                        <img src={img1} alt="" />
                                     </div>
-                                    <div class="side back">First</div>
+                                    <div className="side back">First</div>
                                 </div>
                             </div>
                         </FlipCard>
                         <FlipCard>
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="side">
+                            <div className="card-container">
+                                <div className="card">
+                                    <div className="side">
                                         <h2>Text</h2>
-                                        <img src={img2} alt="" srcset="" />
+                                        <img src={img2} alt="" />
                                     </div>
-                                    <div class="side back">Second</div>
+                                    <div className="side back">Second</div>
                                 </div>
                             </div>
                         </FlipCard>
                         <FlipCard>
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="side">
+                            <div className="card-container">
+                                <div className="card">
+                                    <div className="side">
                                         <h2>Text</h2>
-                                        <img src={img3} alt="" srcset="" />
+                                        <img src={img3} alt="" />
                                     </div>
-                                    <div class="side back">Third</div>
+                                    <div className="side back">Third</div>
                                 </div>
                             </div>
                         </FlipCard>
                         <FlipCard>
-                            <div class="card-container">
-                                <div class="card">
-                                    <div class="side">
+                            <div className="card-container">
+                                <div className="card">
+                                    <div className="side">
                                         <h2>Text</h2>
                                     </div>
-                                    <div class="side back">Fourth</div>
+                                    <div className="side back">Fourth</div>
                                 </div>
                             </div>
                         </FlipCard>
