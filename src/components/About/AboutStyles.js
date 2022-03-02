@@ -89,9 +89,16 @@ export const AboutInfo = styled.div`
         font-size: ${({ theme }) => theme.fontSize.m}
     }
     p {
-        margin-top: 5rem;
+        
+
+        
         font-size: ${({ theme }) => theme.fontSize.xs};
         color: #777777;
         line-height: 1.6rem;
+        margin-bottom:2rem;
+
+        &:first-of-type{
+margin-top: 5rem;
+        }
     }
 `
