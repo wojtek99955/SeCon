@@ -44,11 +44,16 @@ export const Text = styled.div`
 
     h2 {
         font-size: ${({ theme }) => theme.fontSize.s};
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        font-weight:400;
     }
     p {
         font-size: ${({ theme }) => theme.fontSize.xs};
         margin-bottom: 0.8rem;
+
+        &:first-of-type{
+            display: flex;
+        }
     }
 `
 

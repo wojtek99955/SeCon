@@ -10,18 +10,20 @@ function Contact() {
                 <Text>
                     <h1>Kontakt</h1>
                     <Logo>SeCon</Logo>
-                    <h2>Tomasz Jankowiak</h2>
+                    <h2>Techniczna Ochrona Mienia</h2>
                     <p>
                         <LocationIcon />
-                        Poznań, Strzeszyńska 67a
+                        ul. Strzeszyńska 35/37 pok. 37 <br />
+                        60-479 Poznań
                     </p>
                     <p>
                         <MailIcon />
-                        secon@secon.pl
+                        biuro@secon.com.pl
                     </p>
                     <p>
                         <TelIcon />
-                        54335-3535-345
+                        +48 602 36 99 87
+
                     </p>
                 </Text>
                 <Form>
