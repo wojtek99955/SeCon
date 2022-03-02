@@ -113,7 +113,7 @@ h3{
 
 export const CameraIcon = styled(CameraDome)`
     color: ${({ theme }) => theme.color.mainColor};
-    width: 3rem;
+    width: 4rem;
     align-self: center;
     margin-bottom: 2rem;
 
@@ -121,30 +121,20 @@ export const CameraIcon = styled(CameraDome)`
 
 export const ElectricalIcon = styled(ElectricalServices)`
     color: ${({ theme }) => theme.color.mainColor};
-    width:3rem;
+    width:4rem;
     align-self: center;
     margin-bottom: 2rem;
 `
 
-export const CheckMark = styled(CheckmarkCircle2Outline)`
-    width: 1rem;
-    margin-right: 0.5rem;
-`
-
-export const CheckMarkSecond = styled(CheckmarkCircle2Outline)`
-    width: 1rem;
-    color: ${({ theme }) => theme.color.mainColor};
-    margin-right: 0.5rem;
-`
 export const SecurityIcon = styled(Security)`
     color: ${({ theme }) => theme.color.mainColor};
-    width: 3rem;
+    width: 4rem;
     align-self: center;
     margin-bottom: 2rem;
 `
 export const LockIcon = styled(Lock)`
     color: ${({ theme }) => theme.color.mainColor};
-    width: 3rem;
+    width: 4rem;
     align-self: center;
-    margin-bottom: 2rem;
+    margin-bottom: rem;
 `

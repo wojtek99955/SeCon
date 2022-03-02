@@ -35,6 +35,10 @@ export const Nav = styled.nav`
             font-weight: 600;
             text-transform: uppercase;
 
+            &:nth-of-type(2){
+                position:relative;
+            }
+
             @media (max-width: 768px){
                 font-size: 3rem;
 
@@ -48,4 +52,8 @@ export const Nav = styled.nav`
         }
 
     }
+`
+
+export const Dropdown = styled.div`
+    position:absolute;
 `

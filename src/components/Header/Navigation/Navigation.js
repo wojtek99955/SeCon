@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import { Nav } from './NavigationStyles'
+import Dropdown from '../Dropdown/Dropdown';
 
 
 function Navigation({ open, setOpen }) {
@@ -25,13 +26,23 @@ function Navigation({ open, setOpen }) {
 
     });
 
+    const [showDropdown, setShowDropdown] = useState(false);
+
+    const handleShowDropdown = () => setShowDropdown(true);
+
+    const handleHideDropdown = () => setShowDropdown(false);
+
     return (
         <Nav open={open}>
             <ul open={open}>
                 <li ref={menuRef}><Link to="about" onClick={handleCloseNav}>O Nas</Link></li>
-                <li><Link to="services" onClick={handleCloseNav}>Oferta</Link></li>
+                <li onMouseEnter={handleShowDropdown}
+                    onMouseLeave={handleHideDropdown}>
+                    <Link to="services" onClick={handleCloseNav}>Oferta</Link>
+                    {showDropdown ? <Dropdown /> : null}
+                </li>
                 <li><Link to="projects" onClick={handleCloseNav}>Projekty</Link></li>
-                <li onClick={handleCloseNav}>Referencje</li>
+                <li onClick={handleCloseNav}>Certyfikaty</li>
                 <li> <Link to="contact" onClick={handleCloseNav}> Kontakt</Link></li>
             </ul>
         </Nav>
