@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { CameraDome } from '@styled-icons/fluentui-system-regular/CameraDome'
 import { ElectricalServices } from '@styled-icons/material-twotone/ElectricalServices'
 import { CheckmarkCircle2Outline } from '@styled-icons/evaicons-outline/CheckmarkCircle2Outline'
-import { device } from '../../assets/media'
+import { device } from '../../assets/media';
+import { Security } from '@styled-icons/material/Security';
+import { Lock } from '@styled-icons/boxicons-regular/Lock';
 
 
 export const Section = styled.section`
@@ -12,7 +14,7 @@ padding: 5rem 0;
 `
 
 export const Container = styled.div`
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding:1rem;
 
@@ -32,23 +34,21 @@ export const Container = styled.div`
 `
 
 export const ServicesWrapper = styled.div`
-    width:100%;
     margin: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
-    gap:10rem;
+    justify-items: center;
     align-items:center;
+    gap: 2rem;
 
     @media ${device.tablet}{
-        flex-direction: row;
-        gap:2rem;
+        grid-template-columns: 1fr 1fr;
     }
 
-        @media ${device.laptop}
-{
-    width: 90%;
-    gap:6rem;
+        @media ${device.laptop}{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
     ul{
@@ -61,59 +61,58 @@ export const ServicesWrapper = styled.div`
         align-items: center;
     }
 
+    p{
+        font-size: ${({ theme }) => theme.fontSize.xs};
+        color:#777777;
+    }
+
 `
-export const Monitoring = styled.div`
-background-color: ${({ theme }) => theme.color.mainColor};
+export const Service = styled.div`
+background-color: white;
 padding: 2rem;
 display: flex;
 flex-direction: column;
+height: 18rem;
+position: relative;
 width:100%;
+box-shadow: 0px 3px 13px -8px rgba(66, 68, 90, 1);
+max-width:15rem;
 
-    @media ${device.tablet}{
-        width:50%;
-    }
 
 
 h3{
-    color:white;
+    color:black;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: ${({ theme }) => theme.fontSize.m};
+    font-size: ${({ theme }) => theme.fontSize.s};
 }
 
+    button{
+        width:7rem;
+        padding: 0.5rem 0;
+        border-radius: 5px;
+        margin-top: 1rem;
+        background-color: ${({ theme }) => theme.color.mainColor};
+        color: white;
+        border:none;
+        cursor: pointer;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
 
-li{
-    color:white;
+        &:hover{
+            background-color: #c77007;
+        }
+        
 
-}
-`
-export const Measurement = styled.div`
-    background-color: white;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    @media ${device.tablet}{
-        width:50%;
-    }
-
-    
-
-    h3{
-    color:#777777;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: ${({ theme }) => theme.fontSize.m};
-}
-
-    li{
-        color:#777777;
+        
     }
 `
 
 export const CameraIcon = styled(CameraDome)`
-    color: white;
+    color: ${({ theme }) => theme.color.mainColor};
     width: 3rem;
     align-self: center;
     margin-bottom: 2rem;
@@ -129,7 +128,6 @@ export const ElectricalIcon = styled(ElectricalServices)`
 
 export const CheckMark = styled(CheckmarkCircle2Outline)`
     width: 1rem;
-    color:white;
     margin-right: 0.5rem;
 `
 
@@ -138,4 +136,15 @@ export const CheckMarkSecond = styled(CheckmarkCircle2Outline)`
     color: ${({ theme }) => theme.color.mainColor};
     margin-right: 0.5rem;
 `
-
+export const SecurityIcon = styled(Security)`
+    color: ${({ theme }) => theme.color.mainColor};
+    width: 3rem;
+    align-self: center;
+    margin-bottom: 2rem;
+`
+export const LockIcon = styled(Lock)`
+    color: ${({ theme }) => theme.color.mainColor};
+    width: 3rem;
+    align-self: center;
+    margin-bottom: 2rem;
+`

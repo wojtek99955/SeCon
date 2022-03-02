@@ -1,11 +1,30 @@
 import React from 'react'
-import { Section, Container, ServicesWrapper, Monitoring, Measurement, CameraIcon, ElectricalIcon, CheckMark, CheckMarkSecond } from './ServicesStyles'
+import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon } from './ServicesStyles'
 
 
 function Services() {
 
-    const monitoringServices = ["Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor."];
-    const measurementServices = ["Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor.", "Lorem, ipsum dolor."];
+
+    const services = [
+        {
+            img: <CameraIcon />,
+            service: "Monitoring",
+            url: "../"
+        },
+        {
+            img: <SecurityIcon />,
+            service: "Systemy zabezpieczeń",
+            url: "..../",
+        },
+        {
+            img: <LockIcon />,
+            service: "Kontrola dostępu",
+        },
+        {
+            img: <ElectricalIcon />,
+            service: "Pomiary",
+        }
+    ]
 
 
     return (
@@ -14,28 +33,17 @@ function Services() {
                 <h2>Oferta</h2>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero veritatis minus!</h3>
                 <ServicesWrapper>
-                    <Monitoring>
-                        <CameraIcon />
-                        <h3>Lorem ipsum</h3>
-                        <ul>
-                            {monitoringServices.map((service, id) => {
-                                return (
-                                    <li key={id}><CheckMark />{service}</li>
-                                )
-                            })}
-                        </ul>
-                    </Monitoring>
-                    <Measurement>
-                        <ElectricalIcon />
-                        <h3>Lorem Ipsum</h3>
-                        <ul>
-                            {measurementServices.map((service, id) => {
-                                return (
-                                    <li key={id}><CheckMarkSecond />{service}</li>
-                                )
-                            })}
-                        </ul>
-                    </Measurement>
+                    {services.map((service, id) => {
+                        return (
+                            <Service>
+                                {service.img}
+                                <h3>{service.service}</h3>
+                                <p>{service.description}</p>
+
+                                <button>Więcej</button>
+                            </Service>
+                        )
+                    })}
                 </ServicesWrapper>
             </Container>
         </Section>
