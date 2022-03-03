@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
+import { CaretDown } from '@styled-icons/boxicons-regular/CaretDown';
 
 export const Nav = styled.nav`
     display: flex;
@@ -77,4 +78,11 @@ export const StyledHashLink = styled(HashLink)`
     &:hover{
         color: ${({ theme }) => theme.color.mainColor};
     }
+`
+
+export const DownIcon = styled(CaretDown)`
+    width: 1rem;
+    color:${({ theme }) => theme.color.mainColor};
+    transform: ${({ dropdown }) => dropdown ? "rotate(180deg)" : null};
+
 `

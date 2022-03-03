@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Nav, Ul, Li, LiMobile, StyledHashLink } from './NavigationStyles'
+import { Nav, Ul, Li, LiMobile, StyledHashLink, DownIcon } from './NavigationStyles'
 import Dropdown from '../Dropdown/Dropdown';
 
 
@@ -36,11 +36,21 @@ function Navigation({ open, setOpen }) {
         <Nav open={open}>
             <Ul open={open}>
                 <Li ref={menuRef}><StyledHashLink to="/#about" onClick={handleCloseNav}>O Nas</StyledHashLink></Li>
-                <Li> <StyledHashLink onClick={handleCloseNav} to="/#services" onMouseEnter={handleShowDropdown} onMouseLeave={handleHideDropdown}>Oferta {showDropdown ? <Dropdown /> : null}</StyledHashLink>
+                <Li>
+                    <StyledHashLink
+                        onClick={handleCloseNav}
+                        to="/#services"
+                        onMouseEnter={handleShowDropdown}
+                        onMouseLeave={handleHideDropdown}>
+                        Oferta
+                        {showDropdown ? <Dropdown /> : null}
+                    </StyledHashLink>
+                    <DownIcon dropdown={showDropdown} />
                 </Li>
                 <LiMobile onMouseEnter={handleShowDropdown}
                     onMouseLeave={handleHideDropdown}>
-                    <StyledHashLink to="/#services" onClick={handleCloseNav}>Oferta
+                    <StyledHashLink to="/#services" onClick={handleCloseNav}>
+                        Oferta
                     </StyledHashLink>
                     <Dropdown />
                 </LiMobile>
