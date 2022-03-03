@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 const DropdownContainer = styled.div`
     background-color: white;
     position: absolute;
+    top:100%;
 
     @media (max-width: 768px){
         position:sticky;
@@ -18,7 +19,10 @@ const StyledNavLink = styled(NavLink)`
     &:hover{
         color: ${({ theme }) => theme.color.mainColor};
     }
-    padding-bottom: 1rem;
+    padding: 1rem 1rem;
+    &:first-of-type{
+        padding-top:2rem;
+    }
 
 `
 
