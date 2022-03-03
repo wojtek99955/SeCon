@@ -19,15 +19,7 @@ const ContentWrapper = styled.div`
     padding: 4rem 0;
 `
 const Section = styled.section`
-background: #F6F6F6;
-`
-
-const ImageContainer = styled.div`
-    background: rgba(0,0,0,0.6) url(${img});
-    background-size: cover;
-    height:25rem;
-    background-position:center;
-    background-blend-mode: darken;
+    background: #F6F6F6;
 `
 
 const Title = styled.div`
@@ -35,9 +27,10 @@ const Title = styled.div`
  margin:auto;
  display: flex;
  flex-direction: column;
+ padding:5rem 0;
 
     h2{
-        padding: 6rem 0 4rem 0;
+        padding: 3rem 0 0rem 0;
         text-align:center;
         font-size: ${({ theme }) => theme.fontSize.l};
     }
@@ -78,7 +71,7 @@ const Description = styled.div`
     }
 `
 
-const Contact = styled.div`
+export const Contact = styled.div`
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -116,14 +109,13 @@ const Contact = styled.div`
 function Monitoring() {
     return (
         <Section>
-            <ImageContainer />
             <Container>
                 <ContentWrapper>
                     <Title>
+                        <CameraIcon />
                         <h2>
                             Monitoring
                         </h2>
-                        <CameraIcon />
                         <p>Wysokie doświadczenie w projektowaniu i wykonywaniu
                             systemów telewizji dozorowej pozwala nam podejmować
                             zadania zarówno dla małych pojedynczych klientów
