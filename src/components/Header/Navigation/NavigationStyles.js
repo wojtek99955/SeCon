@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { HashLink } from 'react-router-hash-link';
 
 export const Nav = styled.nav`
     display: flex;
     align-items: center;
 
-
-    ul {
+`
+export const Ul = styled.ul`
   list-style: none;
   display: flex;
   gap:1rem;
@@ -26,10 +27,13 @@ export const Nav = styled.nav`
     justify-content: center;
     gap:3rem;
   }
-        
 
-        li {
-            font-size: 0.9rem;
+
+    
+
+`
+export const Li = styled.li`
+    font-size: 0.9rem;
             cursor: pointer;
             color: black;
             font-weight: 600;
@@ -37,10 +41,13 @@ export const Nav = styled.nav`
 
             &:nth-of-type(2){
                 position:relative;
+                @media (max-width: 768px){
+                    display:none;
+                }
             }
 
             @media (max-width: 768px){
-                font-size: 3rem;
+                font-size: 2rem;
 
             }
 
@@ -49,11 +56,25 @@ export const Nav = styled.nav`
             &:hover {
                 color: #f7941c;
             }
-        }
 
-    }
 `
 
-export const Dropdown = styled.div`
-    position:absolute;
+export const LiMobile = styled.li`
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight:600;
+    
+    @media (min-width: 769px){
+        display: none;
+    }
+`
+export const StyledHashLink = styled(HashLink)`
+    text-decoration: none;
+    color:black;
+
+    &:hover{
+        color: ${({ theme }) => theme.color.mainColor};
+    }
 `

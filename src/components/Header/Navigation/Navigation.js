@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
-import { Nav } from './NavigationStyles'
+import { Nav, Ul, Li, LiMobile, StyledHashLink } from './NavigationStyles'
 import Dropdown from '../Dropdown/Dropdown';
+import { NavLink } from 'react-router-dom';
 
 
 function Navigation({ open, setOpen }) {
@@ -26,6 +27,7 @@ function Navigation({ open, setOpen }) {
 
     });
 
+
     const [showDropdown, setShowDropdown] = useState(false);
 
     const handleShowDropdown = () => setShowDropdown(true);
@@ -34,17 +36,20 @@ function Navigation({ open, setOpen }) {
 
     return (
         <Nav open={open}>
-            <ul open={open}>
-                <li ref={menuRef}><Link to="about" onClick={handleCloseNav}>O Nas</Link></li>
-                <li onMouseEnter={handleShowDropdown}
+            <Ul open={open}>
+                <Li ref={menuRef}><StyledHashLink to="/#about" onClick={handleCloseNav}>O Nas</StyledHashLink></Li>
+                <Li> <StyledHashLink onClick={handleCloseNav} to="/#services" onMouseEnter={handleShowDropdown} onMouseLeave={handleHideDropdown}>Oferta {showDropdown ? <Dropdown /> : null}</StyledHashLink>
+                </Li>
+                <LiMobile onMouseEnter={handleShowDropdown}
                     onMouseLeave={handleHideDropdown}>
-                    <Link to="services" onClick={handleCloseNav}>Oferta</Link>
-                    {showDropdown ? <Dropdown /> : null}
-                </li>
-                <li><Link to="projects" onClick={handleCloseNav}>Projekty</Link></li>
-                <li onClick={handleCloseNav}>Certyfikaty</li>
-                <li> <Link to="contact" onClick={handleCloseNav}> Kontakt</Link></li>
-            </ul>
+                    <StyledHashLink to="/#services" onClick={handleCloseNav}>Oferta
+                    </StyledHashLink>
+                    <Dropdown />
+                </LiMobile>
+                <Li><StyledHashLink to="/#projects" onClick={handleCloseNav}>Projekty</StyledHashLink></Li>
+                <Li onClick={handleCloseNav}>Certyfikaty</Li>
+                <Li> <StyledHashLink to="/#contact" onClick={handleCloseNav}> Kontakt</StyledHashLink></Li>
+            </Ul>
         </Nav>
     )
 }

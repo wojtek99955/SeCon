@@ -10,20 +10,20 @@ import Services from './components/Services/Services'
 import OurWork from './components/OurWork/OurWork'
 import Certificates from './components/Certificates/Certificates'
 import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton'
+import Home from './components/View/Home';
+import Monitoring from './components/Monitoring/Monitoring'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
         <div>
             <GlobalStyles />
             <ThemeProvider theme={theme}>
-                <ScrollTopButton />
                 <Header />
-                <MainPage />
-                <About />
-                <Services />
-                <OurWork />
-                <Certificates />
-                <Contact />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/services/monitoring" element={<Monitoring />} />
+                </Routes>
                 <Footer />
             </ThemeProvider>
         </div>
