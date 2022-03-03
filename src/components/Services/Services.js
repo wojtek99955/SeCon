@@ -1,5 +1,6 @@
 import React from 'react'
-import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon } from './ServicesStyles'
+import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon } from './ServicesStyles';
+import { Link } from 'react-router-dom';
 
 
 function Services() {
@@ -9,20 +10,23 @@ function Services() {
         {
             img: <CameraIcon />,
             service: "Monitoring",
-            url: "../"
+            url: "/services/monitoring"
         },
         {
             img: <SecurityIcon />,
             service: "Systemy zabezpieczeń",
-            url: "..../",
+            url: "/services/security",
         },
         {
             img: <LockIcon />,
             service: "Kontrola dostępu",
+            url: "/services/access-control",
+
         },
         {
             img: <ElectricalIcon />,
             service: "Pomiary",
+            url: "/services/measurement",
         }
     ]
 
@@ -39,8 +43,7 @@ function Services() {
                                 {service.img}
                                 <h3>{service.service}</h3>
                                 <p>{service.description}</p>
-
-                                <button>Więcej</button>
+                                <Link to={{ pathname: `${service.url}` }}><button>Więcej</button></Link>
                             </Service>
                         )
                     })}

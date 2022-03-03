@@ -1,14 +1,173 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import img from '../../assets/img/camera-img.jpg';
+import { CameraIcon } from '../Services/ServicesStyles';
+import cameraicon from '../../assets/img/cctv.png';
+import { HashLink } from 'react-router-hash-link';
+
+const Container = styled.div`
+    max-width:1300px;
+    margin:auto;
+
+    p{
+        margin-top:5rem;
+    }
+`
+const ContentWrapper = styled.div`
+    width:80%;
+    margin:auto;
+    padding: 4rem 0;
+`
+const Section = styled.section`
+background: #F6F6F6;
+`
+
+const ImageContainer = styled.div`
+    background: rgba(0,0,0,0.6) url(${img});
+    background-size: cover;
+    height:25rem;
+    background-position:center;
+    background-blend-mode: darken;
+`
+
+const Title = styled.div`
+ max-width: 30rem;
+ margin:auto;
+ display: flex;
+ flex-direction: column;
+
+    h2{
+        padding: 6rem 0 4rem 0;
+        text-align:center;
+        font-size: ${({ theme }) => theme.fontSize.l};
+    }
+
+    p{
+         text-align:center;
+         color:#777777;
+         line-height:1.3rem;
+         font-size:${({ theme }) => theme.fontSize.xs};
+        }
+`
+
+const ContentContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+
+    img{
+        width:40%;
+    }
+`
+const Description = styled.div`
+
+    padding:5rem 0;
+    p{
+        line-height:1.3rem;
+    }
+    h3{
+        margin:2rem 0;
+    }
+    ul{
+        padding-left: 2rem;
+
+        li{
+            text-decoration-color: ${({ theme }) => theme.color.mainColor};
+        }
+    }
+`
+
+const Contact = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+        background: rgba(0,0,0,0.6) url(${img});
+    background-size: cover;
+    height:25rem;
+    background-position:center;
+    background-blend-mode: darken;
+    h3{
+        text-align:center;
+        color:white;
+        margin-bottom:2rem;
+        font-size: ${({ theme }) => theme.fontSize.m} ;
+    }
+    button{
+        width:9rem;
+        background-color: ${({ theme }) => theme.color.mainColor};
+        padding: 0.6rem 0;
+        font-size: ${({ theme }) => theme.fontSize.s};
+        color:white;
+        border-radius:10px;
+        border: 3px solid transparent;
+        transition: background-color 300ms;
+        cursor: pointer;
+
+        &:hover{
+            background-color: transparent;
+            border: ${({ theme }) => `3px solid ${theme.color.mainColor}`};
+
+        }
+    }
+`
 
 function Monitoring() {
     return (
-        <div>
-            <h2>
-                Monitoring
-            </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium accusantium iure iusto fugiat quos explicabo iste repellendus molestiae, est repudiandae tenetur natus beatae minima!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt maiores exercitationem ex, similique facilis ullam suscipit optio. Iusto inventore delectus autem ad excepturi quibusdam, facere praesentium illo repudiandae doloremque dignissimos reprehenderit quos. Tenetur alias ullam nesciunt maxime iusto atque amet odit, reiciendis esse? Quae excepturi magni ad tempore quos id, a, unde dolorem tempora fugit harum, repudiandae voluptatum odio magnam est quo quibusdam. Voluptate, perspiciatis provident distinctio odit expedita eligendi accusantium repellat, commodi ab veniam omnis magni repellendus cum repudiandae! Amet, a. Nesciunt quos quidem nulla assumenda perspiciatis laborum tempora eaque quas rem dolorum, quo expedita saepe recusandae adipisci animi ullam aut sunt sint sed! Optio nostrum illo facere consequatur asperiores! Sint, illum doloremque, odio eligendi, corporis atque expedita explicabo facere maxime laboriosam consequatur porro error illo laborum assumenda non quos reprehenderit ducimus! Sunt, doloremque. Consequatur placeat praesentium, voluptatum perspiciatis illum possimus reiciendis consectetur magnam recusandae, aliquam quaerat cumque eos inventore deleniti beatae, veritatis modi quia expedita facere accusantium natus cum culpa in corrupti. Id quidem qui veniam quas, nisi quo dolores quae ad minus consequatur vel tenetur soluta fugiat obcaecati quibusdam alias necessitatibus blanditiis doloribus. Sequi dicta et natus consequatur quia, quidem voluptatum, tempora aperiam quae doloribus iure consectetur minus vel voluptates corporis! Modi quas eum quia officia, aspernatur minus praesentium? Optio laboriosam nesciunt, voluptates sed numquam dolorum. Consequuntur eum, mollitia saepe excepturi dignissimos iste ab, ad, rem repellendus a sed. Architecto totam, excepturi ipsa nobis laborum sunt saepe ipsam nemo nostrum ab corrupti, quis nesciunt doloribus eius, eos quod. Eveniet tenetur quos animi iure magnam quis! Odit nostrum error praesentium voluptatum aliquam, at amet ducimus soluta quam in dignissimos delectus? Enim temporibus, ullam incidunt ea quis odio modi tempora? Hic aut atque animi earum architecto! Fugit quod explicabo odio, magni facere placeat, error deserunt pariatur consequatur autem quas repudiandae modi, amet fugiat recusandae deleniti tempora accusamus. Voluptatum nesciunt voluptate dicta unde est expedita, pariatur quaerat molestias totam incidunt? Nihil tempore necessitatibus officiis? Consequuntur ea et atque dolorum at quasi eligendi temporibus voluptas culpa deleniti quaerat minima aliquam voluptatem voluptates inventore, accusamus, adipisci facere fugiat molestiae? Id, suscipit praesentium fuga rem temporibus laborum. Laudantium debitis molestiae nihil! Doloribus corrupti optio error harum ad repudiandae amet quis et fugiat sapiente vitae saepe, inventore dolorum nam. Laboriosam id delectus, nihil excepturi saepe in. Nemo, fuga iste saepe nisi qui aperiam cum laboriosam adipisci ea eaque dignissimos animi dolorem rerum impedit excepturi quaerat corporis accusantium quo sed unde, itaque facilis quisquam. Rerum aliquam autem ducimus, animi veritatis dolore et pariatur, delectus nesciunt natus quasi ea vel facere vitae magnam ipsum, tempora perspiciatis reiciendis. Vel laboriosam dolorum quam in iste impedit voluptates ab ipsam. Vel dolorem assumenda minima asperiores voluptates perferendis ipsum atque! Expedita quibusdam illo, nulla molestias aliquid adipisci voluptates officia officiis tempora, numquam illum animi exercitationem voluptate? Non nostrum aspernatur necessitatibus dolorum perferendis cupiditate facilis cum aut rerum fuga, similique enim mollitia placeat et alias quas hic nesciunt molestiae sint est tempore culpa. Dolor illo reprehenderit nemo voluptatibus veniam nam!</p>
-        </div>
+        <Section>
+            <ImageContainer />
+            <Container>
+                <ContentWrapper>
+                    <Title>
+                        <h2>
+                            Monitoring
+                        </h2>
+                        <CameraIcon />
+                        <p>Wysokie doświadczenie w projektowaniu i wykonywaniu
+                            systemów telewizji dozorowej pozwala nam podejmować
+                            zadania zarówno dla małych pojedynczych klientów
+                            jak i złożone przeznaczone dla dużych odbiorców.
+                        </p>
+                    </Title>
+
+                    <ContentContainer>
+                        <Description>
+
+                            <p>
+                                Różnorodność elementów występująca na rynku niesie
+                                za sobą ryzyko braku odpowiedniego doboru poszczególnych
+                                elementów.
+                                Wykonując systemy CCTV, jak i pojedyncze instalacje
+                                dobieramy sprzęt odpowiednio wg potrzeb i kategorii,
+                                uwzględniając jego cechy indywidualne –  DAHUA, BCS,
+                                BOSCH, APTI, HIK VISION i inne.
+                            </p>
+
+                            <h3>Kamery</h3>
+                            <ul>
+                                <li>Stacjonarne</li>
+                                <li>Obrotowe</li>
+                                <li>Miniaturowe</li>
+                                <li>Kamery o kącie widzenia <span>360</span> "fisheye"</li>
+                            </ul>
+                        </Description>
+                        <img src={cameraicon} alt="" srcset="" />
+                    </ContentContainer>
+
+                    <p>PRZESYŁANIE OBRAZU: przewodowo, bezprzewodowo, internet</p>
+                    <p>REJESTRACJA OBRAZU: pamięć bezpośrednio w kamerach (pojedyncze instalacje, małe)lub w dedykowanych rejestratorach</p>
+                    <p>OBSŁUGA: stacjonarna, na odległość, poprzez komputer PC lub telefon, tablet w tym podgląd, archiwum, sterowanie.</p>
+                    <p>REJESTRACJA POJAZDÓW w oparciu o „czytanie” tablic rejestracyjnych.</p>
+                    <p>INTEGRACJA CCTV z innymi systemami.</p>
+
+                </ContentWrapper>
+            </Container>
+            <Contact>
+                <h3>Skontaktuj się po indywidualną wycenę!</h3>
+                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
+            </Contact>
+        </Section>
     )
 }
 

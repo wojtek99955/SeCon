@@ -1,8 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Link } from 'react-scroll'
 import { Nav, Ul, Li, LiMobile, StyledHashLink } from './NavigationStyles'
 import Dropdown from '../Dropdown/Dropdown';
-import { NavLink } from 'react-router-dom';
 
 
 function Navigation({ open, setOpen }) {

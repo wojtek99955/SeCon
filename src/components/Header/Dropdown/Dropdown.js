@@ -28,7 +28,7 @@ function Dropdown() {
         <DropdownContainer>
 
             <StyledNavLink to="/services/monitoring">Monitoring</StyledNavLink>
-            <StyledNavLink to="/">Systemy zabezpieczeń</StyledNavLink>
+            <StyledNavLink to="/services/alarms">Systemy zabezpieczeń</StyledNavLink>
             <StyledNavLink to="/">Kontrola dostępu</StyledNavLink>
             <StyledNavLink to="/">Pomiary</StyledNavLink>
 

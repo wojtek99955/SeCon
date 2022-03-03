@@ -3,6 +3,7 @@ import Hamburger from '../Hamburger/Hamburger'
 import TopBar from '../TopBar/TopBar'
 import Logo from '../../../Logo'
 import { StyledHeader, HeaderContainer } from './HeaderStyles'
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,7 +13,7 @@ function Header() {
             <StyledHeader >
                 <TopBar />
                 <HeaderContainer>
-                    <Logo />
+                    <Link to="/"> <Logo /></Link>
                     <Hamburger />
                 </HeaderContainer>
             </StyledHeader>

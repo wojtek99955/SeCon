@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { CameraDome } from '@styled-icons/fluentui-system-regular/CameraDome'
 import { ElectricalServices } from '@styled-icons/material-twotone/ElectricalServices'
-import { CheckmarkCircle2Outline } from '@styled-icons/evaicons-outline/CheckmarkCircle2Outline'
 import { device } from '../../assets/media';
 import { Security } from '@styled-icons/material/Security';
 import { Lock } from '@styled-icons/boxicons-regular/Lock';
