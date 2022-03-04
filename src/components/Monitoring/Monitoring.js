@@ -9,6 +9,7 @@ import { Transfer } from '@styled-icons/boxicons-regular/Transfer';
 import { VideoRecording } from '@styled-icons/fluentui-system-regular/VideoRecording';
 import { Gear } from '@styled-icons/bootstrap/Gear';
 import { HandIndex } from '@styled-icons/bootstrap/HandIndex';
+import { device } from '../../assets/media';
 
 const Container = styled.div`
     max-width:1300px;
@@ -16,6 +17,7 @@ const Container = styled.div`
 
     p{
         margin-top:5rem;
+        line-height:1.3rem;
     }
 `
 const ContentWrapper = styled.div`
@@ -52,17 +54,27 @@ const ContentContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:5rem;
+    flex-direction: column-reverse;
+
+    @media ${device.tablet}{
+        flex-direction: row;
+        gap:4rem;
+        padding: 3rem 0;
+    }
 
     img{
-        width:40%;
+        width:60%;
+            @media ${device.tablet}{
+            width:40%;
+    }
     }
 `
 const Description = styled.div`
 
-    padding:5rem 0;
+    padding:3rem 0;
     p{
         line-height:1.3rem;
+        margin-top:0rem;
     }
     h3{
         margin:2rem 0;
@@ -72,6 +84,7 @@ const Description = styled.div`
 
         li{
             text-decoration-color: ${({ theme }) => theme.color.mainColor};
+            margin-bottom:0.5rem;
         }
     }
 `
@@ -147,28 +160,37 @@ const monitoringDetails = [
     {
         icon: <HandIcon />,
         title: "Obsługa",
-        text: "stacjonarna, na odległość, poprzez komputer PC lub telefon, tablet w tym podgląd, archiwum, sterowanie.",
+        text: "stacjonarna, na odległość, poprzez komputer PC lub telefon, tablet w tym podgląd, archiwum, sterowanie",
     },
     {
         icon: <CarIcon />,
         title: "Rejestracja pojazdów",
-        text: "w oparciu o „czytanie” tablic rejestracyjnych.",
+        text: "w oparciu o „czytanie” tablic rejestracyjnych",
     },
     {
         icon: <GearIcon />,
         title: "Integracja CCTV",
-        text: "z innymi systemami.",
+        text: "z innymi systemami",
     }
 
 ]
 
 const DetailsContainer = styled.div`
-    display: grid;
-    grid-template-columns: 15rem 15rem;
     row-gap: 4.5rem;
     column-gap: 5rem;
     justify-content: center;
     padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:3.5rem;
+    width:15rem;
+    margin:auto;
+
+    @media ${device.tablet}{
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        width: auto;
+    }
 
 `
 const Detail = styled.div`
@@ -186,12 +208,15 @@ const Detail = styled.div`
 
     h3{
         margin:1rem 0;
+        font-size: ${({ theme }) => theme.fontSize.s};
     }
     
     p{
         text-align:center;
         margin:0.5rem;
         color:#777777;
+        font-size: ${({ theme }) => theme.fontSize.xs};
+        line-height:1.3rem;
     }
 `
 
@@ -233,7 +258,7 @@ function Monitoring() {
                                 <li>Kamery o kącie widzenia <span>360</span> "fisheye"</li>
                             </ul>
                         </Description>
-                        <img src={cameraicon} alt="" srcset="" />
+                        <img src={cameraicon} alt="camera" />
                     </ContentContainer>
                     <DetailsContainer>
                         {monitoringDetails.map((detail, id) => {
