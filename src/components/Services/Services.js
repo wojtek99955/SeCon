@@ -15,7 +15,7 @@ function Services() {
         {
             img: <SecurityIcon />,
             service: "Systemy zabezpieczeń",
-            url: "/services/security",
+            url: "/services/alarms",
         },
         {
             img: <LockIcon />,

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { LockIcon } from '../Services/ServicesStyles';
 import { Contact } from '../Monitoring/Monitoring';
 import { HashLink } from 'react-router-hash-link';
+import alarmsImg from '../../assets/img/access-control.jpeg';
 
 const Section = styled.section`
 
@@ -45,6 +46,24 @@ const Title = styled.div`
         }
 `
 
+const Description = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:4rem;
+`
+
+const Text = styled.div`
+
+`
+
+const Image = styled.img`
+    width:25rem;
+    border-top: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
+    border-right: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
+    border-bottom: ${({ theme }) => `0.4rem solid ${theme.color.mainColor}`};
+`
+
 function Alarms() {
     return (
         <Section>
@@ -57,15 +76,20 @@ function Alarms() {
                             szerokiej gamy urządzeń  -  Satel, Bosch, DSC, Jablotron i inne. Tworzymy małe, średnie, jak i duże systemy, dla każdego użytkownika.
                         </p>
                     </Title>
-                    <h3>Alarmy</h3>
-                    <ul>
-                        <li>włamaniowe</li>
-                        <li>napadowe</li>
-                        <li>pozarowe</li>
-                        <li>innych zdarzeń technicznych i niebezpieczeństw w tym czujniki różnego rodzaju gazów, czujniki zalania wodą, czujniki stanu dowolnych urządzeń,</li>
-                        <li>sterowanie: bramy, rolety, inne urządzenia,</li>
-                        <li> kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe</li>
-                    </ul>
+                    <Description>
+                        <Text>
+                            <h3>Alarmy</h3>
+                            <ul>
+                                <li>włamaniowe</li>
+                                <li>napadowe</li>
+                                <li>pozarowe</li>
+                                <li>innych zdarzeń technicznych i niebezpieczeństw w tym czujniki różnego rodzaju gazów, czujniki zalania wodą, czujniki stanu dowolnych urządzeń,</li>
+                                <li>sterowanie: bramy, rolety, inne urządzenia,</li>
+                                <li> kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe</li>
+                            </ul>
+                        </Text>
+                        <Image src={alarmsImg} />
+                    </Description>
                 </ContentWrapper>
             </Container>
             <Contact>
