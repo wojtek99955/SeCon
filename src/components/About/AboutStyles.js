@@ -80,10 +80,11 @@ export const AboutInfo = styled.div`
     h1 {
         border-bottom: 0.4rem solid #f7941c;
         display: inline-block;
-        font-size: ${({ theme }) => theme.fontSize.l};
+        font-size: ${({ theme }) => theme.fontSize.m};
         margin-bottom: 3rem;
         padding-bottom: 0.5rem;
         margin-top: 2rem;
+        color:#777777;
     }
     h2 {
         font-size: ${({ theme }) => theme.fontSize.m}

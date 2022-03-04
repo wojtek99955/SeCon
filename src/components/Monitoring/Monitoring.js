@@ -4,6 +4,11 @@ import img from '../../assets/img/camera-img.jpg';
 import { CameraIcon } from '../Services/ServicesStyles';
 import cameraicon from '../../assets/img/cctv.png';
 import { HashLink } from 'react-router-hash-link';
+import { VehicleCar } from '@styled-icons/fluentui-system-regular/VehicleCar';
+import { Transfer } from '@styled-icons/boxicons-regular/Transfer';
+import { VideoRecording } from '@styled-icons/fluentui-system-regular/VideoRecording';
+import { Gear } from '@styled-icons/bootstrap/Gear';
+import { HandIndex } from '@styled-icons/bootstrap/HandIndex';
 
 const Container = styled.div`
     max-width:1300px;
@@ -106,6 +111,90 @@ export const Contact = styled.div`
     }
 `
 
+const CarIcon = styled(VehicleCar)`
+    width:3rem;
+    color: ${({ theme }) => theme.color.mainColor};
+`
+const TransferIcon = styled(Transfer)`
+    width:3rem;
+    color: ${({ theme }) => theme.color.mainColor};
+`
+
+const RecordingIcon = styled(VideoRecording)`
+    width:3rem;
+    color: ${({ theme }) => theme.color.mainColor};
+`
+const GearIcon = styled(Gear)`
+    width:3rem;
+    color: ${({ theme }) => theme.color.mainColor};
+`
+const HandIcon = styled(HandIndex)`
+    width:3rem;
+    color: ${({ theme }) => theme.color.mainColor};
+`
+
+const monitoringDetails = [
+    {
+        icon: <TransferIcon />,
+        title: "Przesyłanie obrazu",
+        text: "przewodowo, bezprzewodowo, internet"
+    },
+    {
+        icon: <RecordingIcon />,
+        title: "Rejestracja obrazu",
+        text: "pamięć bezpośrednio w kamerach (pojedyncze instalacje, małe)lub w dedykowanych rejestratorach",
+    },
+    {
+        icon: <HandIcon />,
+        title: "Obsługa",
+        text: "stacjonarna, na odległość, poprzez komputer PC lub telefon, tablet w tym podgląd, archiwum, sterowanie.",
+    },
+    {
+        icon: <CarIcon />,
+        title: "Rejestracja pojazdów",
+        text: "w oparciu o „czytanie” tablic rejestracyjnych.",
+    },
+    {
+        icon: <GearIcon />,
+        title: "Integracja CCTV",
+        text: "z innymi systemami.",
+    }
+
+]
+
+const DetailsContainer = styled.div`
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    row-gap: 4.5rem;
+    column-gap: 5rem;
+    justify-content: center;
+    padding: 3rem 0;
+
+`
+const Detail = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+
+
+    &:nth-of-type(5){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+    h3{
+        margin:1rem 0;
+    }
+    
+    p{
+        text-align:center;
+        margin:0.5rem;
+        color:#777777;
+    }
+`
+
 function Monitoring() {
     return (
         <Section>
@@ -146,13 +235,17 @@ function Monitoring() {
                         </Description>
                         <img src={cameraicon} alt="" srcset="" />
                     </ContentContainer>
-
-                    <p>PRZESYŁANIE OBRAZU: przewodowo, bezprzewodowo, internet</p>
-                    <p>REJESTRACJA OBRAZU: pamięć bezpośrednio w kamerach (pojedyncze instalacje, małe)lub w dedykowanych rejestratorach</p>
-                    <p>OBSŁUGA: stacjonarna, na odległość, poprzez komputer PC lub telefon, tablet w tym podgląd, archiwum, sterowanie.</p>
-                    <p>REJESTRACJA POJAZDÓW w oparciu o „czytanie” tablic rejestracyjnych.</p>
-                    <p>INTEGRACJA CCTV z innymi systemami.</p>
-
+                    <DetailsContainer>
+                        {monitoringDetails.map((detail, id) => {
+                            return (
+                                <Detail>
+                                    {detail.icon}
+                                    <h3>{detail.title}</h3>
+                                    <p>{detail.text}</p>
+                                </Detail>
+                            )
+                        })}
+                    </DetailsContainer>
                 </ContentWrapper>
             </Container>
             <Contact>
