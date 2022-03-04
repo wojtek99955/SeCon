@@ -39,7 +39,11 @@ const Title = styled.div`
     h2{
         padding: 3rem 0 0rem 0;
         text-align:center;
-        font-size: ${({ theme }) => theme.fontSize.l};
+        font-size: ${({ theme }) => theme.fontSize.m};
+
+        @media ${device.tablet}{
+            font-size: ${({ theme }) => theme.fontSize.l};
+        }
     }
 
     p{
@@ -83,7 +87,6 @@ const Description = styled.div`
         padding-left: 2rem;
 
         li{
-            text-decoration-color: ${({ theme }) => theme.color.mainColor};
             margin-bottom:0.5rem;
         }
     }
