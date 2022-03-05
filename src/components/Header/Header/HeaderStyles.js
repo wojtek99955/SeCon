@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-        position: absolute;
+        position: ${({ fixed }) => fixed ? "fixed" : "absolute"};
         width:100%;
         background-color:white;
         box-shadow: 0px 11px 53px 0px rgba(48, 49, 57, 0.21);
+        z-index: 10;
 `
 export const HeaderContainer = styled.div`
     max-width:1300px;

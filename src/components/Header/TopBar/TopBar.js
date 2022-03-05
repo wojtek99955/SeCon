@@ -10,8 +10,10 @@ const Bar = styled.div`
     display: none;
 
     @media ${device.tablet} {
-        display: block;
+        display: ${({ fixed }) => fixed ? "none" : "block"};
+
     }
+    
 `
 
 const Container = styled.div`
@@ -39,9 +41,9 @@ const ItemContainer = styled.div`
     gap: 0.5rem;
 `
 
-function TopBar() {
+function TopBar({ fixed }) {
     return (
-        <Bar>
+        <Bar fixed={fixed}>
             <Container>
                 <ItemContainer>
                     <MailIcon />
