@@ -39,6 +39,7 @@ export const Li = styled.li`
             color: black;
             font-weight: 600;
             text-transform: uppercase;
+            padding:1rem 0;
 
             &:nth-of-type(2){
                 position:relative;
@@ -74,6 +75,7 @@ export const LiMobile = styled.li`
 export const StyledHashLink = styled(HashLink)`
     text-decoration: none;
     color:black;
+    padding:1rem 0;
 
     &:hover{
         color: ${({ theme }) => theme.color.mainColor};

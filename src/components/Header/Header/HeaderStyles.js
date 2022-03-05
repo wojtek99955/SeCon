@@ -12,6 +12,6 @@ export const HeaderContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
     background-color: white;
 `
