@@ -25,7 +25,7 @@ function Services() {
         },
         {
             img: <ElectricalIcon />,
-            service: "Pomiary",
+            service: "Pomiary instalacji i urządzeń elektrycznych",
             url: "/services/measurement",
         }
     ]
