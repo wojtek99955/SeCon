@@ -81,9 +81,10 @@ export const Description = styled.div`
     }
     ul{
         padding-left: 2rem;
+        list-style-type: none;
 
         li{
-            margin-bottom:0.5rem;
+            margin-bottom:1rem;
         }
     }
 `

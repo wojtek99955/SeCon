@@ -3,6 +3,7 @@ import cameraicon from '../../assets/img/cctv.png';
 import { DetailsContainer, Detail, Container, ContentWrapper, Title, Section, ContentContainer, Description, Contact, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
 import { HashLink } from 'react-router-hash-link';
 import { CameraIcon } from '../Services/ServicesStyles';
+import { CheckMark } from '../Alarms/AlarmsStyles';
 
 
 
@@ -34,6 +35,8 @@ const monitoringDetails = [
     }
 
 ]
+
+const cameraTypes = ["Stacjonarne", "Obrotowe", "Miniaturowe", `Kamery o kącie widzenia 360 stopni "fisheye"`]
 
 function Monitoring() {
     return (
@@ -67,10 +70,13 @@ function Monitoring() {
 
                             <h3>Kamery</h3>
                             <ul>
-                                <li>Stacjonarne</li>
-                                <li>Obrotowe</li>
-                                <li>Miniaturowe</li>
-                                <li>Kamery o kącie widzenia <span>360</span> "fisheye"</li>
+                                {
+                                    cameraTypes.map((camera, id) => {
+                                        return (
+                                            <li key={id}><CheckMark />{camera}</li>
+                                        )
+                                    })
+                                }
                             </ul>
                         </Description>
                         <img src={cameraicon} alt="camera" />

@@ -3,7 +3,9 @@ import { LockIcon } from '../Services/ServicesStyles';
 import { Contact } from '../Monitoring/MonitoringStyles';
 import { HashLink } from 'react-router-hash-link';
 import alarmsImg from '../../assets/img/access-control.jpeg';
-import { Section, Container, ContentWrapper, Description, Text, Image, Title } from './AlarmsStyles';
+import { Section, Container, ContentWrapper, Description, Text, Image, Title, CheckMark } from './AlarmsStyles';
+
+const alarmTypes = ["włamaniowe", "napadowe", "pożarowe", "innych zdarzeń technicznych i niebezpieczeństw, w tym czujniki różnego rodzaju gazów, czujniki zalania wodą, czujniki stanu dowolnych urządzeń", "sterowanie: bramy, rolety, inne urządzenia", "kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe"];
 
 function Alarms() {
     return (
@@ -21,12 +23,13 @@ function Alarms() {
                         <Text>
                             <h3>Alarmy</h3>
                             <ul>
-                                <li>włamaniowe</li>
-                                <li>napadowe</li>
-                                <li>pozarowe</li>
-                                <li>innych zdarzeń technicznych i niebezpieczeństw w tym czujniki różnego rodzaju gazów, czujniki zalania wodą, czujniki stanu dowolnych urządzeń,</li>
-                                <li>sterowanie: bramy, rolety, inne urządzenia,</li>
-                                <li> kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe</li>
+                                {
+                                    alarmTypes.map((alarm, id) => {
+                                        return (
+                                            <li key={id}><CheckMark />{alarm}</li>
+                                        )
+                                    })
+                                }
                             </ul>
                         </Text>
                         <Image src={alarmsImg} />
