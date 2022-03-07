@@ -39,7 +39,7 @@ function Services() {
                 <ServicesWrapper>
                     {services.map((service, id) => {
                         return (
-                            <Service>
+                            <Service key={id}>
                                 {service.img}
                                 <h3>{service.service}</h3>
                                 <p>{service.description}</p>

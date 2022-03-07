@@ -271,7 +271,7 @@ function Monitoring() {
                     <DetailsContainer>
                         {monitoringDetails.map((detail, id) => {
                             return (
-                                <Detail>
+                                <Detail key={id}>
                                     {detail.icon}
                                     <h3>{detail.title}</h3>
                                     <p>{detail.text}</p>
