@@ -18,8 +18,8 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/services/monitoring" element={<Monitoring />} />
-                    <Route path="/services/alarms" element={<Alarms />} />
+                    <Route path="/uslugi/monitoring" element={<Monitoring />} />
+                    <Route path="/uslugi/systemy-zabezpieczen" element={<Alarms />} />
                 </Routes>
                 <Footer />
             </ThemeProvider>

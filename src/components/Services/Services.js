@@ -10,23 +10,23 @@ function Services() {
         {
             img: <CameraIcon />,
             service: "Monitoring",
-            url: "/services/monitoring"
+            url: "/uslugi/monitoring"
         },
         {
             img: <SecurityIcon />,
             service: "Systemy zabezpieczeń",
-            url: "/services/alarms",
+            url: "/uslugi/systemy-zabezpieczen",
         },
         {
             img: <LockIcon />,
             service: "Kontrola dostępu",
-            url: "/services/access-control",
+            url: "/uslugi/kontrola-dostepu",
 
         },
         {
             img: <ElectricalIcon />,
             service: "Pomiary instalacji i urządzeń elektrycznych",
-            url: "/services/measurement",
+            url: "/uslugi/pomiary-instalacji-urzadzen-elektrycznych",
         }
     ]
 

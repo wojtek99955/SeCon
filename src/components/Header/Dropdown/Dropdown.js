@@ -35,10 +35,10 @@ function Dropdown() {
     return (
         <DropdownContainer>
 
-            <StyledNavLink to="/services/monitoring">Monitoring</StyledNavLink>
-            <StyledNavLink to="/services/alarms">Systemy zabezpieczeń</StyledNavLink>
-            <StyledNavLink to="/">Kontrola dostępu</StyledNavLink>
-            <StyledNavLink to="/">Pomiary</StyledNavLink>
+            <StyledNavLink to="/uslugi/monitoring">Monitoring</StyledNavLink>
+            <StyledNavLink to="/uslugi/systemy-zabezpieczen">Systemy zabezpieczeń</StyledNavLink>
+            <StyledNavLink to="/uslugi/kontrola-dostepu">Kontrola dostępu</StyledNavLink>
+            <StyledNavLink to="/uslugi/pomiary-instalacji-urzadzen-elektrycznych">Pomiary instalacji i urządzeń elektrycznych</StyledNavLink>
 
         </DropdownContainer>
     )
