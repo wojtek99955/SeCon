@@ -201,6 +201,11 @@ const Detail = styled.div`
     flex-direction: column;
     align-items: center;
     justify-self: center;
+    border: 1px solid #dedede;
+    width:16rem;
+    min-height:15rem;
+    padding:1rem;
+    border-radius:8px;
 
 
     &:nth-of-type(5){
