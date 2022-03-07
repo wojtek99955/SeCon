@@ -62,11 +62,11 @@ export const Description = styled.div`
     }
 
     ul{
-        padding-left:0.5rem;
+        padding-left:1rem;
         list-style-type: none;
     }
     li{
-        margin-bottom:0.8rem;
+        margin-bottom:1rem;
         padding-left:1rem;
     }
 `

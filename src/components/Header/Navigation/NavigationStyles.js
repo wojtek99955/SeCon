@@ -75,7 +75,6 @@ export const LiMobile = styled.li`
 export const StyledHashLink = styled(HashLink)`
     text-decoration: none;
     color:black;
-    padding:1rem 0;
 
     &:hover{
         color: ${({ theme }) => theme.color.mainColor};

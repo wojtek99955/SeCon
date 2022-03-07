@@ -36,16 +36,16 @@ function Navigation({ open, setOpen }) {
         <Nav open={open}>
             <Ul open={open}>
                 <Li ref={menuRef}><StyledHashLink to="/#about" onClick={handleCloseNav}>O Nas</StyledHashLink></Li>
-                <Li>
+                <Li onMouseEnter={handleShowDropdown}
+                    onMouseLeave={handleHideDropdown}>
                     <StyledHashLink
                         onClick={handleCloseNav}
                         to="/#services"
-                        onMouseEnter={handleShowDropdown}
-                        onMouseLeave={handleHideDropdown}>
+                    >
                         Oferta
-                        {showDropdown ? <Dropdown /> : null}
                     </StyledHashLink>
                     <DownIcon dropdown={showDropdown} />
+                    {showDropdown ? <Dropdown /> : null}
                 </Li>
                 <LiMobile onMouseEnter={handleShowDropdown}
                     onMouseLeave={handleHideDropdown}>
