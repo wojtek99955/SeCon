@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CameraDome } from '@styled-icons/fluentui-system-regular/CameraDome'
+import { CameraDome } from '@styled-icons/fluentui-system-filled/CameraDome'
 import { ElectricalServices } from '@styled-icons/material-twotone/ElectricalServices'
 import { device } from '../../assets/media';
 import { Security } from '@styled-icons/material/Security';
@@ -28,7 +28,9 @@ export const Container = styled.div`
     }
     h3{
         text-align: center;
-        margin-bottom: 4rem;
+        max-width:25rem;
+        margin:auto;
+        margin-bottom: 8rem;
     }
 `
 
@@ -60,18 +62,13 @@ export const ServicesWrapper = styled.div`
         align-items: center;
     }
 
-    p{
-        font-size: ${({ theme }) => theme.fontSize.xs};
-        color:#777777;
-    }
-
 `
 export const Service = styled.div`
 background-color: white;
 padding: 2rem;
 display: flex;
 flex-direction: column;
-height: 18rem;
+height: 19rem;
 position: relative;
 width:100%;
 box-shadow: 0px 3px 13px -8px rgba(66, 68, 90, 1);
@@ -82,15 +79,17 @@ max-width:15rem;
 h3{
     color:black;
     text-align: center;
-    margin-bottom: 2rem;
     font-size: ${({ theme }) => theme.fontSize.s};
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
     button{
         width:7rem;
         padding: 0.5rem 0;
         border-radius: 5px;
-        margin-top: 1rem;
         background-color: ${({ theme }) => theme.color.mainColor};
         color: white;
         border:none;
@@ -135,5 +134,5 @@ export const LockIcon = styled(Lock)`
     color: ${({ theme }) => theme.color.mainColor};
     width: 4rem;
     align-self: center;
-    margin-bottom: rem;
+    margin-bottom: 2rem;
 `
