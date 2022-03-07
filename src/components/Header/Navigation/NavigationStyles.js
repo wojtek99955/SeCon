@@ -5,7 +5,6 @@ import { CaretDown } from '@styled-icons/boxicons-regular/CaretDown';
 export const Nav = styled.nav`
     display: flex;
     align-items: center;
-
 `
 export const Ul = styled.ul`
   list-style: none;
@@ -26,7 +25,7 @@ export const Ul = styled.ul`
     transition: transform 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
-    gap:3rem;
+    gap:2rem;
   }
 
 
@@ -49,7 +48,7 @@ export const Li = styled.li`
             }
 
             @media (max-width: 768px){
-                font-size: 2rem;
+                font-size: 1.5rem;
 
             }
 

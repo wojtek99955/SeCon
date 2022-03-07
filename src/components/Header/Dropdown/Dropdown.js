@@ -6,13 +6,11 @@ const DropdownContainer = styled.div`
     background-color: white;
     position: absolute;
     top:100%;
-    width: auto;
-
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-
 
     @media (max-width: 768px){
         position:sticky;
+        box-shadow: none;
     }
     
 `
@@ -26,6 +24,10 @@ const StyledNavLink = styled(NavLink)`
     padding: 1rem 1rem;
     &:first-of-type{
         padding-top:2rem;
+    }
+
+        @media (max-width: 768px){
+        font-size: 0.8rem;
     }
 
 `

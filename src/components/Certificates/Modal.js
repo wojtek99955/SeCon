@@ -36,8 +36,6 @@ cursor: pointer;
 `
 function Modal({ modal, imgsrc, setModal }) {
 
-    console.log(modal)
-
     const handleClose = () => {
         setModal(false);
     }

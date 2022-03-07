@@ -4,7 +4,7 @@ import { device } from '../../assets/media';
 import img2 from '../../assets/img/light-bgr.svg';
 
 export const Section = styled.section`
-    margin: 4rem 2rem;
+    padding: 4rem 2rem;
 `
 
 export const Container = styled.div`
