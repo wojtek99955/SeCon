@@ -15,7 +15,7 @@ function Certificates() {
     }
 
     return (
-        <Container>
+        <Container id="certificates">
             <h2>Certyfikaty</h2>
             {modal ? <Modal imgsrc={imgSrc} modal={modal} setModal={setModal} /> : null}
             <GalleryContainer>

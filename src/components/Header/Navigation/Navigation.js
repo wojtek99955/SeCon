@@ -45,7 +45,7 @@ function Navigation({ open, setOpen }) {
                         Oferta
                     </StyledHashLink>
                     <DownIcon dropdown={showDropdown} />
-                    {showDropdown ? <Dropdown $dropdown={showDropdown} /> : null}
+                    {showDropdown ? <Dropdown dropdown={showDropdown} /> : null}
                 </Li>
                 <LiMobile onMouseEnter={handleShowDropdown}
                     onMouseLeave={handleHideDropdown}>
@@ -55,7 +55,7 @@ function Navigation({ open, setOpen }) {
                     <Dropdown />
                 </LiMobile>
                 <Li><StyledHashLink to="/#projects" onClick={handleCloseNav}>Projekty</StyledHashLink></Li>
-                <Li onClick={handleCloseNav}>Certyfikaty</Li>
+                <Li> <StyledHashLink to="/#certificates" onClick={handleCloseNav}>Certyfikaty</StyledHashLink></Li>
                 <Li> <StyledHashLink to="/#contact" onClick={handleCloseNav}> Kontakt</StyledHashLink></Li>
             </Ul>
         </Nav>

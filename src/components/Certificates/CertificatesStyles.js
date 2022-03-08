@@ -5,9 +5,11 @@ import { device } from '../../assets/media';
 export const Container = styled.div`
     max-width: 1300px;
     margin:auto;
+    padding:3rem 0;
     h2{
         text-align:center;
         font-size: ${({ theme }) => theme.fontSize.m};
+        margin-bottom:2rem;
     }
 `
 
@@ -37,6 +39,7 @@ export const GalleryContainer = styled.div`
 export const ImageContainer = styled.div`
     position: relative;
     transition: transform 400ms ease;
+    cursor: pointer;
 
     &:hover{
         transform: scale(1.1);
@@ -46,7 +49,6 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
     width: 100%;
-    cursor: pointer;
 `
 export const Overlay = styled.div`
     position: absolute;
