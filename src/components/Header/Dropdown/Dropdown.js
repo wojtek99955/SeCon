@@ -15,7 +15,6 @@ const DropdownContainer = styled.div`
     @media (max-width: 768px){
         position:sticky;
         box-shadow: none;
-        height:auto;
     }
     
 `
