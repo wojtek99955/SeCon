@@ -1,11 +1,15 @@
 import React from 'react'
-import { ContactSection, Container, Text, Form, Logo, MailIcon, TelIcon, LocationIcon } from './ContactStyles'
-
-
+import { ContactSection, Container, Text, Form, Logo, MailIcon, TelIcon, LocationIcon, TopContainer } from './ContactStyles';
+import { Link } from 'react-scroll';
 
 function Contact() {
     return (
         <ContactSection id="contact">
+            <TopContainer>
+                <h3>Have any questions?</h3>
+                <h2>Skontaktuj się z nami po bezpłatną wycenę</h2>
+                <Link to="contact"><button>Kontakt</button></Link>
+            </TopContainer>
             <Container>
                 <Text>
                     <h1>Kontakt</h1>

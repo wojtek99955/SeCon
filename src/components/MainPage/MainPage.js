@@ -14,7 +14,7 @@ const StyledSection = styled.section`
     display: flex;
 `
 
-const scaleAnimation = keyframes`
+export const scaleAnimation = keyframes`
     0%{
         transform: scale(1.0);
 

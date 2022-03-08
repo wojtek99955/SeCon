@@ -4,12 +4,15 @@ import { Mail } from '@styled-icons/feather/Mail'
 import { Location } from '@styled-icons/fluentui-system-regular/Location'
 import { Telephone } from '@styled-icons/bootstrap/Telephone'
 import img from '../../assets/img/contactimage.jpeg'
+import { scaleAnimation } from '../MainPage/MainPage'
 
 export const ContactSection = styled.section`
-    padding: 4rem 1rem;
+    padding: 8rem 1rem;
     background: rgba(0, 0, 0, 0.75) url(${img});
     background-blend-mode: darken;
     background-size: cover;
+    position:relative;
+
 
     h1 {
         color: white;
@@ -31,6 +34,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding-top: 5rem ;
 
     @media ${device.tablet} {
         flex-direction: row;
@@ -152,6 +156,58 @@ export const LocationIcon = styled(Location)`
     width: 1.5rem;
     margin-right: 0.8rem;
 `
+export const TopContainer = styled.div`
+    position:absolute;
+    top:-15%;
+    max-width:1200px;
+    padding: 3rem 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0px 11px 53px 0px rgba(48, 49, 57, 0.31);
+    width:100%;
+    left:0;
+    margin:auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 8px;
 
+    h3{
+        text-align: center;
+        margin-bottom:1rem;
+        color:#777777;
+        font-size: ${({ theme }) => theme.fontSize.xs};
+    }
+    h2{
+        text-align: center;
+        padding-bottom:1rem;
+        
+    }
+    button{
+        background-color: ${({ theme }) => theme.color.mainColor};
+        padding: 0.4rem 1.6rem;
+        margin:auto;
+        display: block;
+        margin-top:1rem;
+        color: white;
+        border-radius: 10px;
+        font-size: ${({ theme }) => theme.fontSize.s};
+        cursor: pointer;
+        border: 3px solid #f7941c;
+
+        &:hover {
+            animation: ${scaleAnimation};
+            animation-duration: 300ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+    }
+    @media ${device.tablet}{
+        width: 90%;
+        margin:auto;
+    }
+
+`
 
 
