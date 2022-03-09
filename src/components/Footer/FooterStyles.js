@@ -40,7 +40,7 @@ export const Row = styled.div`
 `
 
 export const BottomBar = styled.div`
-    height: 50px;
+    height: 3rem;
     background-color: #f7941c;
 `
 

@@ -7,7 +7,7 @@ import { device } from '../../assets/media'
 const UpIcon = styled(ArrowUpCircleFill)`
     width:2.5rem;
     color: ${({ theme }) => theme.color.mainColor};
-    top:90%;
+    top:85%;
     right:1rem;
     position:fixed;
     cursor: pointer;
