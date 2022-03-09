@@ -6,9 +6,10 @@ const DropdownContainer = styled.div`
     background-color: white;
     position: absolute;
     top:100%;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); */
+    border:1px solid #dedede;
     overflow: hidden;
-    transition: height 0.5s ease-in-out;
+    transition: height 0.2s ease-in-out;
     height: ${({ $dropdown, height }) => ($dropdown && height) ? height : 0};
     
 
@@ -22,6 +23,7 @@ const StyledNavLink = styled(NavLink)`
     display: block;
     text-decoration: none;
     color:black;
+    border-bottom: 1px solid #dedede;
   
 
     &:hover{
@@ -29,7 +31,7 @@ const StyledNavLink = styled(NavLink)`
     }
     padding: 1rem 1rem;
     &:first-of-type{
-        padding-top:2rem;
+        padding-top:1rem;
     }
 
         @media (max-width: 768px){
