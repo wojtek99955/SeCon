@@ -53,8 +53,8 @@ function Dropdown({ $dropdown }) {
 
             <StyledNavLink to="/uslugi/monitoring">Monitoring</StyledNavLink>
             <StyledNavLink to="/uslugi/systemy-zabezpieczen">Systemy zabezpieczeń</StyledNavLink>
-            <StyledNavLink to="/uslugi/kontrola-dostepu">Kontrola dostępu</StyledNavLink>
-            <StyledNavLink to="/uslugi/pomiary-instalacji-urzadzen-elektrycznych">Pomiary instalacji i urządzeń elektrycznych</StyledNavLink>
+            <StyledNavLink to="/uslugi/kontrola-dostepu-rejestracja-czasu-pracy">Kontrola dostępu</StyledNavLink>
+            <StyledNavLink to="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych">Pomiary instalacji i urządzeń elektrycznych</StyledNavLink>
 
         </DropdownContainer>
     )

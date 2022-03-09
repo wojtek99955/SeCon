@@ -4,10 +4,12 @@ import { GlobalStyles } from './assets/styles/GlobalStyles.js'
 import Footer from './components/Footer/Footer'
 import { theme } from './assets/styles/theme'
 import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton'
-import Home from './components/View/Home';
+import Home from './components/View/Home'
 import Monitoring from './components/Monitoring/Monitoring'
-import { Routes, Route } from 'react-router-dom';
-import Alarms from './components/Alarms/Alarms';
+import { Routes, Route } from 'react-router-dom'
+import Alarms from './components/Alarms/Alarms'
+import AccessControl from './components/AccessControl/AccessControl'
+import Measurement from './components/Measurement/Measurement'
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/uslugi/monitoring" element={<Monitoring />} />
                     <Route path="/uslugi/systemy-zabezpieczen" element={<Alarms />} />
+                    <Route path="/uslugi/kontrola-dostepu-rejestracja-czasu-pracy" element={<AccessControl />} />
+                    <Route path="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych" element={<Measurement />} />
                 </Routes>
                 <Footer />
             </ThemeProvider>

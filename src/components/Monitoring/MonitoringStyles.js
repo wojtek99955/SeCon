@@ -7,7 +7,7 @@ import { HandIndex } from '@styled-icons/bootstrap/HandIndex';
 import img from '../../assets/img/camera-img.jpg';
 import { device } from '../../assets/media';
 
-export const Container = styled.div`
+export const Container = styled.section`
     max-width:1300px;
     margin:auto;
 
