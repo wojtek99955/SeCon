@@ -99,7 +99,10 @@ export const AboutInfo = styled.div`
         margin-bottom:2rem;
 
         &:first-of-type{
-margin-top: 5rem;
+            margin-top: 5rem;
+        }
+        &:last-of-type{
+            margin-bottom: 0;
         }
     }
 `
