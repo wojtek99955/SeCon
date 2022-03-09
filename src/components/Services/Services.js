@@ -20,13 +20,13 @@ function Services() {
         {
             img: <LockIcon />,
             service: "Kontrola dostępu",
-            url: "/uslugi/kontrola-dostepu",
+            url: "/uslugi/kontrola-dostepu-rejestracja-czasu-pracy",
 
         },
         {
             img: <ElectricalIcon />,
             service: "Pomiary instalacji i urządzeń elektrycznych",
-            url: "/uslugi/pomiary-instalacji-urzadzen-elektrycznych",
+            url: "/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych",
         }
     ]
 
