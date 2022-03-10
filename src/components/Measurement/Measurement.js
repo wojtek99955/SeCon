@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { device } from '../../assets/media'
 import { ElectricalIcon } from '../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
+import img from '../../assets/img/electrical-installation.jpeg'
 
 export const Section = styled.section`
     background: #F6F6F6;
@@ -11,6 +12,7 @@ export const Section = styled.section`
 export const Container = styled.section`
     max-width:1300px;
     margin:auto;
+    padding: 0 1rem;
 
     p{
         margin-top:5rem;
@@ -19,7 +21,6 @@ export const Container = styled.section`
 `
 
 export const ContentWrapper = styled.div`
-    width:80%;
     margin:auto;
     padding: 4rem 0;
 `
@@ -49,9 +50,22 @@ export const Title = styled.div`
         }
 `
 export const ContentContainer = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    @media ${device.tablet}{
+        padding: 6rem 0;
+    }
 
+    @media ${device.laptop}{
+        flex-direction: row;
+        gap: 4rem;
+    }
 `
 export const Description = styled.div`
+
+
     ul{
         padding-left: 2rem;
         list-style-type: none;
@@ -68,6 +82,21 @@ export const Description = styled.div`
     }
 `
 const measurements = ["Pomiary parametrów pętli zwarcia", "Pomiary rezystancji uziemień", "Pomiary parametrów wyłączników różnicowoprądowych RCD", "Pomiary rezystancji izolacji", "Pomiary prądu, mocy czynnej, biernej i pozornej oraz współczynnika cosφ", "Sprawdzenie poprawności wykonania połączeń przewodu ochronnego", "Pomiary natężenia oświetlenia"];
+
+const Img = styled.img`
+    margin:auto;
+    width:90%;
+    border-top: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
+    border-right: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
+    border-bottom: ${({ theme }) => `0.4rem solid ${theme.color.mainColor}`};
+
+    @media ${device.mobileL}{
+        width:80%;
+    }
+    @media ${device.tablet}{
+        width:45%;
+    }
+`
 
 function Measurement() {
     return (
@@ -100,6 +129,7 @@ function Measurement() {
                             </p>
                             <p>Usługi wykonujemy na terenie całego kraju.</p>
                         </Description>
+                        <Img src={img}></Img>
                     </ContentContainer>
                 </ContentWrapper>
             </Container>

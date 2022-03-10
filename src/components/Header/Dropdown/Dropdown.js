@@ -6,7 +6,6 @@ const DropdownContainer = styled.div`
     background-color: white;
     position: absolute;
     top:100%;
-    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4); */
     border:1px solid #dedede;
     overflow: hidden;
     transition: height 0.2s ease-in-out;
@@ -52,12 +51,10 @@ function Dropdown({ $dropdown }) {
 
     return (
         <DropdownContainer height={height} ref={dropdownRef} $dropdown={$dropdown}>
-
             <StyledNavLink to="/uslugi/monitoring">Monitoring</StyledNavLink>
             <StyledNavLink to="/uslugi/systemy-zabezpieczen">Systemy zabezpieczeń</StyledNavLink>
             <StyledNavLink to="/uslugi/kontrola-dostepu-rejestracja-czasu-pracy">Kontrola dostępu</StyledNavLink>
             <StyledNavLink to="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych">Pomiary instalacji i urządzeń elektrycznych</StyledNavLink>
-
         </DropdownContainer>
     )
 }
