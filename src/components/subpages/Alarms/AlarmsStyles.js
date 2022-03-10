@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../assets/media';
+import { device } from '../../../assets/media';
 import { CheckCircle } from '@styled-icons/fa-solid/CheckCircle';
 
 export const Section = styled.section`

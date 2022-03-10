@@ -1,9 +1,9 @@
 import React from 'react';
-import { SecurityIcon } from '../Services/ServicesStyles';
+import { SecurityIcon } from '../../Services/ServicesStyles';
 import { Contact } from '../Monitoring/MonitoringStyles';
 import { HashLink } from 'react-router-hash-link';
-import alarmsImg from '../../assets/img/access-control.jpeg';
-import { Section, Container, ContentWrapper, Description, Text, Image, Title, CheckMark } from './AlarmsStyles';
+import alarmsImg from '../../../assets/img/access-control.jpeg';
+import { Section, Container, ContentWrapper, Description, Image, Title, CheckMark, ContentContainer } from '../SubpagesStyles';
 
 const alarmTypes = ["włamaniowe", "napadowe", "pożarowe", "sterowanie: bramy, rolety, inne urządzenia", "kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe"];
 
@@ -19,8 +19,8 @@ function Alarms() {
                             szerokiej gamy urządzeń  -  Satel, Bosch, DSC, Jablotron i inne. Tworzymy małe, średnie, jak i duże systemy, dla każdego użytkownika.
                         </p>
                     </Title>
-                    <Description>
-                        <Text>
+                    <ContentContainer>
+                        <Description>
                             <h3>Alarmy</h3>
                             <ul>
                                 {
@@ -31,9 +31,9 @@ function Alarms() {
                                     })
                                 }
                             </ul>
-                        </Text>
+                        </Description>
                         <Image src={alarmsImg} />
-                    </Description>
+                    </ContentContainer>
                 </ContentWrapper>
             </Container>
             <Contact>

@@ -1,8 +1,9 @@
 import React from 'react';
-import cameraicon from '../../assets/img/cctv.png';
-import { DetailsContainer, Detail, Container, ContentWrapper, Title, Section, ContentContainer, Description, Contact, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
+import cameraicon from '../../../assets/img/cctv.png';
+import { DetailsContainer, Detail, Contact, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
+import { Section, Container, Title, ContentWrapper, ContentContainer, Description, } from '../SubpagesStyles';
 import { HashLink } from 'react-router-hash-link';
-import { CameraIcon } from '../Services/ServicesStyles';
+import { CameraIcon } from '../../Services/ServicesStyles';
 import { CheckMark } from '../Alarms/AlarmsStyles';
 
 

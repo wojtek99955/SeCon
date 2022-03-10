@@ -4,8 +4,8 @@ import { Transfer } from '@styled-icons/boxicons-regular/Transfer';
 import { VideoRecording } from '@styled-icons/fluentui-system-regular/VideoRecording';
 import { Gear } from '@styled-icons/bootstrap/Gear';
 import { HandIndex } from '@styled-icons/bootstrap/HandIndex';
-import img from '../../assets/img/camera-img.jpg';
-import { device } from '../../assets/media';
+import img from '../../../assets/img/camera-img.jpg';
+import { device } from '../../../assets/media';
 
 export const Container = styled.section`
     max-width:1300px;

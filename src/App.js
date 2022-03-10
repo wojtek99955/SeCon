@@ -5,11 +5,11 @@ import Footer from './components/Footer/Footer'
 import { theme } from './assets/styles/theme'
 import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton'
 import Home from './components/View/Home'
-import Monitoring from './components/Monitoring/Monitoring'
+import Monitoring from './components/subpages/Monitoring/Monitoring'
 import { Routes, Route } from 'react-router-dom'
-import Alarms from './components/Alarms/Alarms'
-import AccessControl from './components/AccessControl/AccessControl'
-import Measurement from './components/Measurement/Measurement'
+import Alarms from './components//subpages/Alarms/Alarms'
+import AccessControl from './components/subpages/AccessControl/AccessControl'
+import Measurement from './components/subpages/Measurement/Measurement'
 
 function App() {
     return (
