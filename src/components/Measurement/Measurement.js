@@ -4,6 +4,8 @@ import { device } from '../../assets/media'
 import { ElectricalIcon } from '../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
 import img from '../../assets/img/electrical-installation.jpeg'
+import { Contact } from '../Monitoring/MonitoringStyles'
+import { HashLink } from 'react-router-hash-link'
 
 export const Section = styled.section`
     background: #F6F6F6;
@@ -133,6 +135,10 @@ function Measurement() {
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
+            <Contact>
+                <h3>Skontaktuj się po indywidualną wycenę!</h3>
+                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
+            </Contact>
         </Section>
     )
 }

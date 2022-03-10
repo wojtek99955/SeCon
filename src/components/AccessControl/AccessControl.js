@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import { device } from '../../assets/media'
 import { LockIcon } from '../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
+import { Contact } from '../Monitoring/MonitoringStyles'
+import { HashLink } from 'react-router-hash-link'
+import img from '../../assets/img/access-control.jpeg'
 
 export const Section = styled.section`
     background: #F6F6F6;
@@ -49,7 +52,18 @@ export const Title = styled.div`
         }
 `
 export const ContentContainer = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    @media ${device.tablet}{
+        padding: 6rem 0;
+    }
 
+    @media ${device.laptop}{
+        flex-direction: row;
+        gap: 4rem;
+    }
 `
 export const Description = styled.div`
     ul{
@@ -65,6 +79,20 @@ export const Description = styled.div`
     }
         h3{
         margin:2rem 0;
+    }
+`
+export const Img = styled.img`
+    margin:auto;
+    width:90%;
+    border-top: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
+    border-right: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
+    border-bottom: ${({ theme }) => `0.4rem solid ${theme.color.mainColor}`};
+
+    @media ${device.mobileL}{
+        width:80%;
+    }
+    @media ${device.tablet}{
+        width:45%;
     }
 `
 
@@ -104,9 +132,14 @@ function AccessControl() {
                             <p>Do rozliczania czasu pracy lub ewidencji – jeżeli istnieje taka potrzeba, wykorzystujemy oprogramowanie odpowiedniego producenta wraz z serwisem pogwarancyjnym.
                             </p>
                         </Description>
+                        <Img src={img} />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
+            <Contact>
+                <h3>Skontaktuj się po indywidualną wycenę!</h3>
+                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
+            </Contact>
         </Section>
     )
 }
