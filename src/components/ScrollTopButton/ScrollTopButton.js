@@ -7,11 +7,24 @@ import { device } from '../../assets/media'
 const UpIcon = styled(ArrowUpCircleFill)`
     width:2.5rem;
     color: ${({ theme }) => theme.color.mainColor};
-    top:85%;
     right:1rem;
     position:fixed;
     cursor: pointer;
     z-index: 10;
+    animation: move 400ms ease-in 0s;
+    animation-fill-mode:both;
+
+
+    @keyframes move{
+        0%{
+            top:100%;
+            opacity: 0;
+        }
+        100%{
+            top: 90%;
+            opacity: 1;
+        }
+    }
 
     @media ${device.tablet}{
         width:3rem;
@@ -36,7 +49,7 @@ function ScrollTopButton() {
     const handleScrollTop = () => scroll.scrollToTop();
     return (
         <>
-            {showButton && <UpIcon onClick={handleScrollTop} />}
+            {showButton && <UpIcon showButton={showButton} onClick={handleScrollTop} />}
         </>
 
     );
