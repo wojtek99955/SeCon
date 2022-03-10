@@ -1,5 +1,5 @@
 import React from 'react';
-import { LockIcon } from '../Services/ServicesStyles';
+import { SecurityIcon } from '../Services/ServicesStyles';
 import { Contact } from '../Monitoring/MonitoringStyles';
 import { HashLink } from 'react-router-hash-link';
 import alarmsImg from '../../assets/img/access-control.jpeg';
@@ -13,7 +13,7 @@ function Alarms() {
             <Container>
                 <ContentWrapper>
                     <Title>
-                        <LockIcon />
+                        <SecurityIcon />
                         <h2>Systemy zabezpieczeń</h2>
                         <p> Elektroniczne systemy zabezpieczeń tworzymy na bazie
                             szerokiej gamy urządzeń  -  Satel, Bosch, DSC, Jablotron i inne. Tworzymy małe, średnie, jak i duże systemy, dla każdego użytkownika.

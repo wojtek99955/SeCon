@@ -5,7 +5,7 @@ import { ElectricalIcon } from '../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
 import img from '../../assets/img/electrical-installation.jpeg'
 import { Contact } from '../Monitoring/MonitoringStyles'
-import { HashLink } from 'react-router-hash-link'
+import { HashLink } from 'react-router-hash-link';
 
 export const Section = styled.section`
     background: #F6F6F6;
