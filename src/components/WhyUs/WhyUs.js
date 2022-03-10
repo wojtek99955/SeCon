@@ -11,13 +11,17 @@ function WhyUs() {
     const [warranty, setWarranty] = useState(1);
 
     useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset + window.innerHeight > numberRef.current.offsetTop) {
-                setHeight(true);
-            } else {
-                setHeight(false);
-            }
-        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset + window.innerHeight > numberRef.current.offsetTop) {
+                    setHeight(true);
+                } else {
+                    setHeight(false);
+                }
+            });
+        }
+        )
     }, []);
 
     useEffect(() => {
