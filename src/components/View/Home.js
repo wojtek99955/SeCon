@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import MainPage from '../MainPage/MainPage';
 import About from '../About/About';
 import Services from '../Services/Services';
@@ -8,6 +8,11 @@ import Contact from '../Contact/Contact';
 import WhyUs from '../WhyUs/WhyUs';
 
 function Home() {
+
+    useEffect(() => {
+        document.title = "SeCon"
+    }, []);
+
     return (
         <>
             <MainPage />

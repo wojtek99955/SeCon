@@ -10,8 +10,14 @@ import { Routes, Route } from 'react-router-dom'
 import Alarms from './components//subpages/Alarms/Alarms'
 import AccessControl from './components/subpages/AccessControl/AccessControl'
 import Measurement from './components/subpages/Measurement/Measurement'
+import { useEffect } from 'react';
+
 
 function App() {
+
+    useEffect(() => {
+        document.title = "This is a title"
+    }, []);
     return (
         <div>
             <GlobalStyles />

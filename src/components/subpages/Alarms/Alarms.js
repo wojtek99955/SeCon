@@ -1,13 +1,18 @@
-import React from 'react';
 import { SecurityIcon } from '../../Services/ServicesStyles';
 import { Contact } from '../Monitoring/MonitoringStyles';
 import { HashLink } from 'react-router-hash-link';
 import alarmsImg from '../../../assets/img/access-control.jpeg';
 import { Section, Container, ContentWrapper, Description, Image, Title, CheckMark, ContentContainer } from '../SubpagesStyles';
+import { useEffect } from 'react';
 
 const alarmTypes = ["włamaniowe", "napadowe", "pożarowe", "sterowanie: bramy, rolety, inne urządzenia", "kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe"];
 
 function Alarms() {
+
+    useEffect(() => {
+        document.title = "SeCon - systemy zabezpieczeń"
+    }, []);
+
     return (
         <Section>
             <Container>

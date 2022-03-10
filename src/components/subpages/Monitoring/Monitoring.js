@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import cameraicon from '../../../assets/img/cctv.png';
 import { DetailsContainer, Detail, Contact, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
 import { Section, Container, Title, ContentWrapper, ContentContainer, Description, } from '../SubpagesStyles';
@@ -40,6 +40,11 @@ const monitoringDetails = [
 const cameraTypes = ["Stacjonarne", "Obrotowe", "Miniaturowe", `Kamery o kącie widzenia 360 stopni "fisheye"`]
 
 function Monitoring() {
+
+    useEffect(() => {
+        document.title = "Secon - monitoring"
+    }, []);
+
     return (
         <Section>
             <Container>

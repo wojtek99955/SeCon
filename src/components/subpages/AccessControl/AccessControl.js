@@ -4,8 +4,14 @@ import { Contact } from '../Monitoring/MonitoringStyles'
 import { HashLink } from 'react-router-hash-link'
 import img from '../../../assets/img/access-control.jpeg'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
+import { useEffect } from 'react'
 
 function AccessControl() {
+
+    useEffect(() => {
+        document.title = "Secon - kontrola dostępu, rejestracja czasu pracy"
+    }, []);
+
     return (
         <Section>
             <Container>
