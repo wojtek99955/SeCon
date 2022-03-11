@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NumbersSection, Container, NumberItem, MedalIcon, ShieldIcon } from './WhyUsStyles';
 
+
 function WhyUs() {
 
     const numberRef = useRef(null);
@@ -12,19 +13,18 @@ function WhyUs() {
 
     useEffect(() => {
 
-        document.addEventListener('DOMContentLoaded', function () {
-            window.addEventListener("scroll", () => {
-                if (window.pageYOffset + window.innerHeight > numberRef.current.offsetTop) {
-                    setHeight(true);
-                } else {
-                    setHeight(false);
-                }
-            });
-        }
-        )
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset + window.innerHeight > numberRef.current.offsetTop) {
+                setHeight(true);
+            } else {
+                setHeight(false);
+            }
+        });
+
     }, []);
 
     useEffect(() => {
+
         const interval = setInterval(() => {
             if (height === true && experience < 20) {
                 setExperience((prev) => prev + 1);
@@ -32,6 +32,7 @@ function WhyUs() {
         }, 50);
 
         return () => clearInterval(interval);
+
     }, [experience, height]);
 
     useEffect(() => {
@@ -42,7 +43,12 @@ function WhyUs() {
         }, 50);
 
         return () => clearInterval(interval);
+
     }, [warranty, height]);
+
+    useEffect(() => {
+        console.log("routesie zmienil")
+    }, []);
 
     return (
         <NumbersSection ref={numberRef}>
