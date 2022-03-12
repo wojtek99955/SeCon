@@ -9,12 +9,14 @@ const DropdownContainer = styled.div`
     border:1px solid #dedede;
     overflow: hidden;
     transition: height 0.2s ease-in-out;
-    height: ${({ $dropdown, height }) => ($dropdown && height) ? height : 0};
+    height: ${({ height }) => height ? height : 0};
     
 
     @media (max-width: 768px){
         position:sticky;
         box-shadow: none;
+        height:auto;
+        border:none;
     }
     
 `
@@ -23,6 +25,11 @@ const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     color:black;
     border-bottom: 1px solid #dedede;
+
+    @media (max-width: 768px){
+        border-bottom: none;
+        color: #777777;
+    }
   
 
     &:hover{
@@ -40,7 +47,7 @@ const StyledNavLink = styled(NavLink)`
 `
 
 
-function Dropdown({ $dropdown }) {
+function Dropdown() {
 
     const [height, setHeight] = useState("0px");
     const dropdownRef = useRef(null);
@@ -50,7 +57,7 @@ function Dropdown({ $dropdown }) {
     }, [height]);
 
     return (
-        <DropdownContainer height={height} ref={dropdownRef} $dropdown={$dropdown}>
+        <DropdownContainer height={height} ref={dropdownRef}>
             <StyledNavLink to="/uslugi/monitoring">Monitoring</StyledNavLink>
             <StyledNavLink to="/uslugi/systemy-zabezpieczen">Systemy zabezpieczeń</StyledNavLink>
             <StyledNavLink to="/uslugi/kontrola-dostepu-rejestracja-czasu-pracy">Kontrola dostępu</StyledNavLink>

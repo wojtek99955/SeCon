@@ -44,6 +44,7 @@ export const Li = styled.li`
                 position:relative;
                 @media (max-width: 768px){
                     display:none;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -62,7 +63,7 @@ export const Li = styled.li`
 
 export const LiMobile = styled.li`
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-align:center;
     font-weight:600;

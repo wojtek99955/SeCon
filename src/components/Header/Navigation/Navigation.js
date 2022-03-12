@@ -47,8 +47,8 @@ function Navigation({ open, setOpen }) {
                     <DownIcon dropdown={showDropdown} />
                     {showDropdown ? <Dropdown $dropdown={showDropdown} /> : null}
                 </Li>
-                <LiMobile onMouseEnter={handleShowDropdown}
-                    onMouseLeave={handleHideDropdown}>
+                <LiMobile
+                >
                     <StyledHashLink to="/#services" onClick={handleCloseNav}>
                         Oferta
                     </StyledHashLink>
