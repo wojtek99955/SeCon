@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 
     }
     li {
-        font-size: ${({ theme }) => theme.fontSize.xs};
+        font-size: ${({ theme }) => theme.fontSize.xxs};
         font-weight: 500;
         cursor: pointer;
         text-align: center;
@@ -60,6 +60,7 @@ export const StyledHashLink = styled(HashLink)`
     color: #777777;
     display: block;
     padding: 0.2rem 0;
+    text-transform: capitalize;
 
 
     &:hover {
@@ -71,6 +72,7 @@ export const StyledNavLink = styled(NavLink)`
     color: #777777;
     display: block;
     padding: 0.2rem 0;
+    text-transform: capitalize;
 
     &:hover {
         color: #f7941c;
@@ -80,7 +82,7 @@ export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
     padding: 0.6rem 2rem;
-    align-self: center;
+    align-self: flex-start;
     color:white;
     border-radius: 10px;
     cursor: pointer;

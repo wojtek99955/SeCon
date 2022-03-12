@@ -30,9 +30,9 @@ function Footer() {
                         <h3>Oferta</h3>
                         <ul>
                             <li><StyledNavLink to="/uslugi/monitoring">monitoring</StyledNavLink></li>
-                            <li><StyledNavLink to="/uslugi/monitoring">systemy zabezpieczeń</StyledNavLink></li>
-                            <li><StyledNavLink to="/uslugi/monitoring">kontrola dostępu</StyledNavLink></li>
-                            <li><StyledNavLink to="/uslugi/monitoring">pomiary instalacji elektrycznej</StyledNavLink></li>
+                            <li><StyledNavLink to="/uslugi/systemy-zabezpieczen">systemy zabezpieczeń</StyledNavLink></li>
+                            <li><StyledNavLink to="/uslugi/kontrola-dostepu-rejestracja-czasu-pracy">kontrola dostępu</StyledNavLink></li>
+                            <li><StyledNavLink to="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych">pomiary instalacji elektrycznej</StyledNavLink></li>
                         </ul>
                     </Nav>
                     <ContactButton to="/#contact">Kontakt</ContactButton>
