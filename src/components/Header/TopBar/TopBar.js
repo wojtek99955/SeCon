@@ -41,9 +41,9 @@ const ItemContainer = styled.div`
     gap: 0.5rem;
 `
 
-function TopBar({ fixed }) {
+function TopBar({ fixed, forwardedRef }) {
     return (
-        <Bar fixed={fixed}>
+        <Bar ref={forwardedRef} fixed={fixed}>
             <Container>
                 <ItemContainer>
                     <MailIcon />
