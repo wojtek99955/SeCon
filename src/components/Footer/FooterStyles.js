@@ -57,7 +57,7 @@ export const Logo = styled.img`
 `
 export const StyledHashLink = styled(HashLink)`
     text-decoration:none;
-    color: black;
+    color: #777777;
     display: block;
     padding: 0.2rem 0;
 
@@ -68,7 +68,7 @@ export const StyledHashLink = styled(HashLink)`
 `
 export const StyledNavLink = styled(NavLink)`
     text-decoration:none;
-    color: black;
+    color: #777777;
     display: block;
     padding: 0.2rem 0;
 
