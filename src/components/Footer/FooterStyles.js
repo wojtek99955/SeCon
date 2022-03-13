@@ -82,11 +82,16 @@ export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
     padding: 0.6rem 2rem;
-    align-self: flex-start;
+    align-self: center;
     color:white;
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    align-self: center;
+
+    @media ${device.laptop}{
+        align-self: flex-start;
+    }
 `
 export const ContentWrapper = styled.div`
     display: flex;
