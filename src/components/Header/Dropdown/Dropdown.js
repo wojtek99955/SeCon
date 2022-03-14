@@ -8,7 +8,7 @@ const DropdownContainer = styled.div`
     top:100%;
     border:1px solid #dedede;
     overflow: hidden;
-    transition: height 0.2s ease-in-out;
+    transition: height 0.3s ease-in-out;
     height: ${({ height }) => height ? height : 0};
     
 
