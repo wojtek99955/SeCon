@@ -14,6 +14,7 @@ const UpIcon = styled(ChevronUp)`
     animation-fill-mode:both;
     background-color: ${({ theme }) => theme.color.mainColor};
     border-radius: 50%;
+    width: 3rem;
 
     &:hover{
         background-color: #C77009;
@@ -28,10 +29,6 @@ const UpIcon = styled(ChevronUp)`
             top: 90%;
             opacity: 1;
         }
-    }
-
-    @media ${device.tablet}{
-        width:3rem;
     }
 
 `
