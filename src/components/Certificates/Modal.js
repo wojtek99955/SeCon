@@ -15,9 +15,18 @@ const ModalContainer = styled.div`
     top:0;
     left:0;
     z-index:10;
+    overflow: scroll;
 
     img{
-        height:90vh;
+        width: 100%;
+        @media ${device.mobileL}{
+            width:80%;
+            overflow: scroll;
+        }
+        @media ${device.tablet}{
+            height:85%;
+            width:auto;
+        }
     }
 `
 
