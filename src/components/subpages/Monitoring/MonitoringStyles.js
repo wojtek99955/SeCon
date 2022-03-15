@@ -31,7 +31,7 @@ export const Detail = styled.div`
     justify-self: center;
     border: 1px solid #dedede;
     width:16rem;
-    min-height:14rem;
+    height:16rem;
     padding:1rem;
     border-radius:8px;
     &:nth-of-type(5){

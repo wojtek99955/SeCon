@@ -20,6 +20,9 @@ export const Container = styled.section`
 export const ContentWrapper = styled.div`
     margin:auto;
     padding: 4rem 0;
+    @media ${device.laptop}{
+        width:80%;
+    }
 `
 export const Title = styled.div`
  max-width: 30rem;
