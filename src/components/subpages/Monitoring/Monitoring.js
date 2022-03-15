@@ -3,7 +3,6 @@ import cameraicon from '../../../assets/img/monitoring-img.png';
 import { DetailsContainer, Detail, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
 import { Section, Container, Title, ContentWrapper, ContentContainer, Description, Image } from '../SubpagesStyles';
 import { CameraIcon } from '../../Services/ServicesStyles';
-import { CheckMark } from '../Alarms/AlarmsStyles';
 import ContactSubpages from '../ContactSubpages';
 
 
@@ -87,19 +86,19 @@ function Monitoring() {
                         </Description>
                         <Image src={cameraicon} alt="camera" />
                     </ContentContainer>
-                    <DetailsContainer>
-                        {monitoringDetails.map((detail, id) => {
-                            return (
-                                <Detail key={id}>
-                                    {detail.icon}
-                                    <h3>{detail.title}</h3>
-                                    <p>{detail.text}</p>
-                                </Detail>
-                            )
-                        })}
-                    </DetailsContainer>
                 </ContentWrapper>
             </Container>
+            <DetailsContainer>
+                {monitoringDetails.map((detail, id) => {
+                    return (
+                        <Detail key={id}>
+                            {detail.icon}
+                            <h3>{detail.title}</h3>
+                            <p>{detail.text}</p>
+                        </Detail>
+                    )
+                })}
+            </DetailsContainer>
             <ContactSubpages />
         </Section>
     )

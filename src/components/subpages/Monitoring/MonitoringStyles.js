@@ -11,15 +11,15 @@ export const DetailsContainer = styled.div`
     row-gap: 4.5rem;
     column-gap: 5rem;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 0 0 4rem 0;
     display: flex;
     flex-direction: column;
     gap:3.5rem;
-    width:15rem;
+    width:16rem;
     margin:auto;
     @media ${device.tablet}{
         display: grid;
-        grid-template-columns: 15rem 15rem;
+        grid-template-columns: 16rem 16rem;
         width: auto;
     }
 `
@@ -30,10 +30,11 @@ export const Detail = styled.div`
     align-items: center;
     justify-self: center;
     border: 1px solid #dedede;
+    padding:1rem;
     width:16rem;
     height:16rem;
-    padding:1rem;
     border-radius:8px;
+
     &:nth-of-type(5){
         grid-column-start: 1;
         grid-column-end: 3;
@@ -42,13 +43,13 @@ export const Detail = styled.div`
         margin:1rem 0;
         font-size: ${({ theme }) => theme.fontSize.s};
     }
-    
     p{
-        text-align:center;
-        margin:0.5rem;
-        color:#777777;
-        font-size: ${({ theme }) => theme.fontSize.xs};
-        line-height:1.3rem;
+            text-align:center;
+    margin-top:-2rem;
+    margin:0.5rem;
+    color:#777777;
+    font-size: ${({ theme }) => theme.fontSize.xs};
+    line-height:1.3rem;
     }
 `
 
