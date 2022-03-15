@@ -1,10 +1,9 @@
 import { LockIcon } from '../../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
-import { Contact } from '../Monitoring/MonitoringStyles'
-import { HashLink } from 'react-router-hash-link'
 import img from '../../../assets/img/kontrola-dostepu.png'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
+import ContactSubpages from '../ContactSubpages'
 
 function AccessControl() {
 
@@ -50,10 +49,7 @@ function AccessControl() {
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
-            <Contact>
-                <h3>Skontaktuj się po indywidualną wycenę!</h3>
-                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
-            </Contact>
+            <ContactSubpages />
         </Section>
     )
 }

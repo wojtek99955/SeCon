@@ -7,87 +7,6 @@ import { HandIndex } from '@styled-icons/bootstrap/HandIndex';
 import img from '../../../assets/img/camera-img.jpg';
 import { device } from '../../../assets/media';
 
-export const Container = styled.section`
-    max-width:1300px;
-    margin:auto;
-
-    p{
-        margin-top:5rem;
-        line-height:1.3rem;
-    }
-`
-export const ContentWrapper = styled.div`
-    width:80%;
-    margin:auto;
-    padding: 4rem 0;
-`
-export const Section = styled.section`
-    background: #F6F6F6;
-`
-
-export const Title = styled.div`
- max-width: 30rem;
- margin:auto;
- display: flex;
- flex-direction: column;
- padding:5rem 0;
-
-    h2{
-        padding: 3rem 0 0rem 0;
-        text-align:center;
-        font-size: ${({ theme }) => theme.fontSize.m};
-
-        @media ${device.tablet}{
-            font-size: ${({ theme }) => theme.fontSize.l};
-        }
-    }
-
-    p{
-         text-align:center;
-         color:#777777;
-         line-height:1.3rem;
-         font-size:${({ theme }) => theme.fontSize.xs};
-        }
-`
-
-export const ContentContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-
-    @media ${device.tablet}{
-        flex-direction: row;
-        gap:4rem;
-        padding: 3rem 0;
-    }
-
-    img{
-        width:60%;
-            @media ${device.tablet}{
-            width:40%;
-    }
-    }
-`
-export const Description = styled.div`
-
-    padding:3rem 0;
-    p{
-        line-height:1.3rem;
-        margin-top:0rem;
-    }
-    h3{
-        margin:2rem 0;
-    }
-    ul{
-        padding-left: 2rem;
-        list-style-type: none;
-
-        li{
-            margin-bottom:1rem;
-        }
-    }
-`
 export const DetailsContainer = styled.div`
     row-gap: 4.5rem;
     column-gap: 5rem;
@@ -112,7 +31,7 @@ export const Detail = styled.div`
     justify-self: center;
     border: 1px solid #dedede;
     width:16rem;
-    min-height:16rem;
+    min-height:14rem;
     padding:1rem;
     border-radius:8px;
     &:nth-of-type(5){

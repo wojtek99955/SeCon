@@ -1,10 +1,9 @@
 import { ElectricalIcon } from '../../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
 import img from '../../../assets/img/pomiary.jpeg'
-import { Contact } from '../Monitoring/MonitoringStyles'
-import { HashLink } from 'react-router-hash-link'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
+import ContactSubpages from '../ContactSubpages'
 
 
 const measurements = ["Pomiary parametrów pętli zwarcia", "Pomiary rezystancji uziemień", "Pomiary parametrów wyłączników różnicowoprądowych RCD", "Pomiary rezystancji izolacji", "Pomiary prądu, mocy czynnej, biernej i pozornej oraz współczynnika cosφ", "Sprawdzenie poprawności wykonania połączeń przewodu ochronnego", "Pomiary natężenia oświetlenia"];
@@ -49,10 +48,7 @@ function Measurement() {
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
-            <Contact>
-                <h3>Skontaktuj się po indywidualną wycenę!</h3>
-                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
-            </Contact>
+            <ContactSubpages />
         </Section>
     )
 }

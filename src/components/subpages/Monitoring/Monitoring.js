@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import cameraicon from '../../../assets/img/monitoring-img.png';
-import { DetailsContainer, Detail, Contact, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
+import { DetailsContainer, Detail, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
 import { Section, Container, Title, ContentWrapper, ContentContainer, Description, Image } from '../SubpagesStyles';
-import { HashLink } from 'react-router-hash-link';
 import { CameraIcon } from '../../Services/ServicesStyles';
 import { CheckMark } from '../Alarms/AlarmsStyles';
+import ContactSubpages from '../ContactSubpages';
 
 
 
@@ -100,10 +100,7 @@ function Monitoring() {
                     </DetailsContainer>
                 </ContentWrapper>
             </Container>
-            <Contact>
-                <h3>Skontaktuj się po indywidualną wycenę!</h3>
-                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
-            </Contact>
+            <ContactSubpages />
         </Section>
     )
 }

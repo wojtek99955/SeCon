@@ -1,9 +1,8 @@
 import { SecurityIcon } from '../../Services/ServicesStyles';
-import { Contact } from '../Monitoring/MonitoringStyles';
-import { HashLink } from 'react-router-hash-link';
 import alarmsImg from '../../../assets/img/alarms.png';
 import { Section, Container, ContentWrapper, Description, Image, Title, CheckMark, ContentContainer } from '../SubpagesStyles';
 import { useEffect } from 'react';
+import ContactSubpages from '../ContactSubpages';
 
 const alarmTypes = ["włamaniowe", "napadowe", "pożarowe", "sterowanie: bramy, rolety, inne urządzenia", "kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe"];
 
@@ -41,10 +40,7 @@ function Alarms() {
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
-            <Contact>
-                <h3>Skontaktuj się po indywidualną wycenę!</h3>
-                <HashLink to="/#contact"><button>Kontakt</button></HashLink>
-            </Contact>
+            <ContactSubpages />
         </Section>
     )
 }
