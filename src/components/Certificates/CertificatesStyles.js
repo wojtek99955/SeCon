@@ -32,9 +32,6 @@ export const GalleryContainer = styled.div`
     @media ${device.laptop}{
         grid-template-columns: repeat(3, 13rem);
     }
-    @media ${device.laptopL}{
-        grid-template-columns: repeat(3, 1fr);
-    }
 `
 
 export const ImageContainer = styled.div`
