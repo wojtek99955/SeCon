@@ -1,7 +1,7 @@
 import { SecurityIcon } from '../../Services/ServicesStyles';
 import { Contact } from '../Monitoring/MonitoringStyles';
 import { HashLink } from 'react-router-hash-link';
-import alarmsImg from '../../../assets/img/access-control.jpeg';
+import alarmsImg from '../../../assets/img/alarms.png';
 import { Section, Container, ContentWrapper, Description, Image, Title, CheckMark, ContentContainer } from '../SubpagesStyles';
 import { useEffect } from 'react';
 

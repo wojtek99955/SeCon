@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import cameraicon from '../../../assets/img/cctv.png';
+import cameraicon from '../../../assets/img/monitoring-img.png';
 import { DetailsContainer, Detail, Contact, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
-import { Section, Container, Title, ContentWrapper, ContentContainer, Description, } from '../SubpagesStyles';
+import { Section, Container, Title, ContentWrapper, ContentContainer, Description, Image } from '../SubpagesStyles';
 import { HashLink } from 'react-router-hash-link';
 import { CameraIcon } from '../../Services/ServicesStyles';
 import { CheckMark } from '../Alarms/AlarmsStyles';
@@ -85,7 +85,7 @@ function Monitoring() {
                                 }
                             </ul>
                         </Description>
-                        <img src={cameraicon} alt="camera" />
+                        <Image src={cameraicon} alt="camera" />
                     </ContentContainer>
                     <DetailsContainer>
                         {monitoringDetails.map((detail, id) => {

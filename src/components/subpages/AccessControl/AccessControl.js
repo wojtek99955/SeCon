@@ -2,7 +2,7 @@ import { LockIcon } from '../../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
 import { Contact } from '../Monitoring/MonitoringStyles'
 import { HashLink } from 'react-router-hash-link'
-import img from '../../../assets/img/access-control.jpeg'
+import img from '../../../assets/img/kontrola-dostepu.png'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
 

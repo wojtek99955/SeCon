@@ -1,6 +1,6 @@
 import { ElectricalIcon } from '../../Services/ServicesStyles'
 import { CheckMark } from '../Alarms/AlarmsStyles'
-import img from '../../../assets/img/electrical-installation.jpeg'
+import img from '../../../assets/img/pomiary.jpeg'
 import { Contact } from '../Monitoring/MonitoringStyles'
 import { HashLink } from 'react-router-hash-link'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
