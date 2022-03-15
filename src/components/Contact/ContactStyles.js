@@ -111,16 +111,16 @@ export const Form = styled.form`
         border: 3px solid #f7941c;
         border-radius: 10px;
         align-self: flex-start;
-        padding: 0.6rem 0.8rem;
+        padding: 0.6rem 1.2rem;
         color: white;
         font-weight: 600;
         cursor: pointer;
-        font-size: ${({ theme }) => theme.fontSize.xxs};
+        font-size: ${({ theme }) => theme.fontSize.s};
         transition: background-color 300ms;
 
-        @media ${device.mobileL}{
+        @media ${device.laptop}{
             padding: 0.9rem 1.4rem;
-            font-size: ${({ theme }) => theme.fontSize.xs};
+            font-size: ${({ theme }) => theme.fontSize.s};
         }
 
         &:hover {
@@ -185,7 +185,7 @@ export const TopContainer = styled.div`
     }
     button{
         background-color: ${({ theme }) => theme.color.mainColor};
-        padding: 0.4rem 1.6rem;
+        padding: 0.8rem 2.5rem;
         margin:auto;
         display: block;
         margin-top:1rem;
@@ -194,6 +194,9 @@ export const TopContainer = styled.div`
         font-size: ${({ theme }) => theme.fontSize.s};
         cursor: pointer;
         border: 3px solid #f7941c;
+        @media ${device.tablet}{
+        padding: 0.6rem 2rem;
+    }
 
         &:hover {
             animation: ${scaleAnimation};

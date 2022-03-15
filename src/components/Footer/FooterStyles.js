@@ -92,7 +92,7 @@ export const StyledNavLink = styled(NavLink)`
 export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
-    padding: 1rem 2.5rem;
+    padding: 0.8rem 2.5rem;
     align-self: center;
     color:white;
     border-radius: 10px;
@@ -102,7 +102,7 @@ export const ContactButton = styled(HashLink)`
     font-size: ${({ theme }) => theme.fontSize.s};
 
     @media ${device.tablet}{
-        padding: 0.8rem 2rem;
+        padding: 0.6rem 2rem;
     }
 
     @media ${device.laptop}{
