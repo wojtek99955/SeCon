@@ -23,23 +23,26 @@ export const Nav = styled.nav`
 
     }
     li {
-        font-size: ${({ theme }) => theme.fontSize.xxs};
+        font-size: ${({ theme }) => theme.fontSize.s};
         font-weight: 500;
         cursor: pointer;
         text-align: center;
 
-        @media ${device.laptop}{
+        @media ${device.tablet}{
             text-align: start;
+            font-size: ${({ theme }) => theme.fontSize.xs};
+
         }
     }
     h3{
-        font-size: ${({ theme }) => theme.fontSize.s};
+        font-size: ${({ theme }) => theme.fontSize.m};
         text-transform: uppercase;
         margin-bottom:1rem;
         text-align:center;
 
-        @media ${device.laptop}{
+        @media ${device.tablet}{
             text-align: start;
+            font-size: ${({ theme }) => theme.fontSize.s}
         }
     }
 `
@@ -59,35 +62,48 @@ export const StyledHashLink = styled(HashLink)`
     text-decoration:none;
     color: #777777;
     display: block;
-    padding: 0.2rem 0;
+    padding: 0.6rem 0;
     text-transform: capitalize;
-
+    font-weight:400;
 
     &:hover {
         color: #f7941c;
+    }
+    @media ${device.tablet}{
+        padding: 0.4rem 0;
     }
 `
 export const StyledNavLink = styled(NavLink)`
     text-decoration:none;
     color: #777777;
     display: block;
-    padding: 0.2rem 0;
+    padding: 0.6rem 0;
     text-transform: capitalize;
+    font-weight:400;
 
     &:hover {
         color: #f7941c;
+    }
+
+    @media ${device.tablet}{
+        padding: 0.4rem 0;
     }
 `
 export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
-    padding: 0.6rem 2rem;
+    padding: 1rem 2.5rem;
     align-self: center;
     color:white;
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
     align-self: center;
+    font-size: ${({ theme }) => theme.fontSize.s};
+
+    @media ${device.tablet}{
+        padding: 0.8rem 2rem;
+    }
 
     @media ${device.laptop}{
         align-self: flex-start;
@@ -98,7 +114,7 @@ export const ContentWrapper = styled.div`
     flex-direction: column;
     gap: 2rem;
 
-    @media ${device.laptop}{
+    @media ${device.tablet}{
         flex-direction: row;
         justify-content: space-between;
     }

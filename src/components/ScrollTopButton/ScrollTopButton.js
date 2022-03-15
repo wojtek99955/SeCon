@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ChevronUp } from '@styled-icons/boxicons-regular/ChevronUp';
 import styled from 'styled-components';
 import { animateScroll as scroll } from 'react-scroll';
-import { device } from '../../assets/media'
 
 const UpIcon = styled(ChevronUp)`
     color: white;
