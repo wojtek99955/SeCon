@@ -1,6 +1,6 @@
 import { SecurityIcon } from '../../Services/ServicesStyles';
 import alarmsImg from '../../../assets/img/alarms.png';
-import { Section, Container, ContentWrapper, Description, Image, Title, CheckMark, ContentContainer } from '../SubpagesStyles';
+import { Section, Container, ContentWrapper, Description, Image, Title, ContentContainer } from '../SubpagesStyles';
 import { useEffect } from 'react';
 import ContactSubpages from '../ContactSubpages';
 
@@ -30,7 +30,7 @@ function Alarms() {
                                 {
                                     alarmTypes.map((alarm, id) => {
                                         return (
-                                            <li key={id}><CheckMark />{alarm}</li>
+                                            <li key={id}>{alarm}</li>
                                         )
                                     })
                                 }

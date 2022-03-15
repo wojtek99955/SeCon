@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { device } from '../../assets/media';
-import { CheckCircle } from '@styled-icons/fa-solid/CheckCircle';
 
 export const Section = styled.section`
     background: #F6F6F6;
@@ -46,7 +45,7 @@ export const Title = styled.div`
     p{
          text-align:center;
          color:#777777;
-         line-height:1.3rem;
+         line-height:1.5rem;
          font-size:${({ theme }) => theme.fontSize.xs};
         }
 `
@@ -70,19 +69,24 @@ export const Description = styled.div`
 
         li{
             margin-bottom:1rem;
+            padding-left:0.5rem;
+            font-size: ${({ theme }) => theme.fontSize.xs};
+
+            &::marker {
+                color: ${({ theme }) => theme.color.mainColor};
+                font-size:1.5rem;
+                content: '\\2713';
+            }
         }
     }
+    
     p{
-        line-height:1.3rem;
+        line-height:1.5rem;
+        font-size: ${({ theme }) => theme.fontSize.xs};
     }
         h3{
         margin:2rem 0;
     }
-`
-export const CheckMark = styled(CheckCircle)`
-    width:1rem;
-    color: ${({ theme }) => theme.color.mainColor};
-    margin-right:1rem;
 `
 
 export const Image = styled.img`

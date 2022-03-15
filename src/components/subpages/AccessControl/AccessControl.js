@@ -1,5 +1,4 @@
 import { LockIcon } from '../../Services/ServicesStyles'
-import { CheckMark } from '../Alarms/AlarmsStyles'
 import img from '../../../assets/img/kontrola-dostepu.png'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
@@ -39,8 +38,8 @@ function AccessControl() {
                             </p>
                             <h3>Zastosowanie nawet prostej kontroli dostępu daje możliwość:</h3>
                             <ul>
-                                <li><CheckMark />integracji z systemami monitoringu i alarmowymi</li>
-                                <li> <CheckMark /> integracji z systemami rejestracji czasu pracy, wspomagania procesów produkcji, kontroli obecności itp.</li>
+                                <li>integracji z systemami monitoringu i alarmowymi</li>
+                                <li> integracji z systemami rejestracji czasu pracy, wspomagania procesów produkcji, kontroli obecności itp.</li>
                             </ul>
                             <p>Do rozliczania czasu pracy lub ewidencji – jeżeli istnieje taka potrzeba, wykorzystujemy oprogramowanie odpowiedniego producenta wraz z serwisem pogwarancyjnym.
                             </p>

@@ -79,7 +79,7 @@ function Monitoring() {
                                 {
                                     cameraTypes.map((camera, id) => {
                                         return (
-                                            <li key={id}><CheckMark />{camera}</li>
+                                            <li key={id}>{camera}</li>
                                         )
                                     })
                                 }

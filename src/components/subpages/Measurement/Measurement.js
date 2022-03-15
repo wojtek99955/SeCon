@@ -1,5 +1,4 @@
 import { ElectricalIcon } from '../../Services/ServicesStyles'
-import { CheckMark } from '../Alarms/AlarmsStyles'
 import img from '../../../assets/img/pomiary.jpeg'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
@@ -32,7 +31,7 @@ function Measurement() {
                             <ul>
                                 {measurements.map((measure, id) => {
                                     return (
-                                        <li key={id}><CheckMark />{measure}</li>
+                                        <li key={id}>{measure}</li>
                                     )
                                 })}
                             </ul>
