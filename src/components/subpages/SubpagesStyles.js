@@ -11,15 +11,19 @@ export const Container = styled.section`
     padding: 0 1rem;
 
     p{
-        margin-top:5rem;
+        margin-top:2rem;
         line-height:1.3rem;
+
+        &:first-of-type{
+            margin-top: 5rem;
+        }
     }
 `
 
 export const ContentWrapper = styled.div`
     margin:auto;
     padding: 4rem 0;
-    @media ${device.laptop}{
+    @media ${device.tablet}{
         width:80%;
     }
 `
