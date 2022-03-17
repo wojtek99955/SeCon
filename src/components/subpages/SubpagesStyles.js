@@ -13,6 +13,7 @@ export const Container = styled.section`
     p{
         margin-top:2rem;
         line-height:1.3rem;
+        font-size:${({ theme }) => theme.fontSize.xs};
 
         &:first-of-type{
             margin-top: 5rem;
