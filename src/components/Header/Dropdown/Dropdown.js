@@ -41,7 +41,8 @@ const StyledNavLink = styled(NavLink)`
     }
 
         @media (max-width: 768px){
-        font-size: 0.8rem;
+        font-size: 1.3rem;
+        text-transform: capitalize;
     }
 
 `

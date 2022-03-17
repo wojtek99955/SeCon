@@ -21,11 +21,10 @@ export const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 100%;
-    padding-top: 3.5rem;
     transition: transform 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
-    gap:2rem;
+    gap:1rem;
   }
 
 
@@ -49,7 +48,7 @@ export const Li = styled.li`
             }
 
             @media (max-width: 768px){
-                font-size: 1.5rem;
+                font-size: 2rem;
 
             }
 
@@ -63,7 +62,7 @@ export const Li = styled.li`
 
 export const LiMobile = styled.li`
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align:center;
     font-weight:600;
