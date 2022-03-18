@@ -7,11 +7,15 @@ import img from '../../assets/img/contactimage.jpeg'
 import { scaleAnimation } from '../MainPage/MainPage'
 
 export const ContactSection = styled.section`
-    padding: 8rem 1rem;
+    padding: 3rem 1rem;
     background: rgba(0, 0, 0, 0.75) url(${img});
     background-blend-mode: darken;
     background-size: cover;
     position:relative;
+
+    @media ${device.tablet}{
+        padding: 8rem 1rem;
+    }
 
 
     h1 {
