@@ -5,10 +5,13 @@ import { device } from '../../assets/media';
 import { Security } from '@styled-icons/material/Security';
 import { Lock } from '@styled-icons/boxicons-regular/Lock';
 
-
 export const Section = styled.section`
 background-color: #F6F6F6;
-padding: 5rem 0;
+padding: 3rem 0;
+
+@media ${device.tablet}{
+    padding: 5rem 0;
+}
 
 `
 
@@ -22,7 +25,7 @@ export const Container = styled.div`
         font-size: ${({ theme }) => theme.fontSize.m};
         color:#777777;
         text-align: center;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
         text-decoration: ${({ theme }) => `underline solid ${theme.color.mainColor} 5px`};
         text-underline-offset: 1rem;
     }
@@ -30,7 +33,11 @@ export const Container = styled.div`
         text-align: center;
         max-width:25rem;
         margin:auto;
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
+
+        @media ${device.tablet}{
+            margin-bottom:6rem;
+        }
     }
 `
 
