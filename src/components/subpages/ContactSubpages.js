@@ -1,7 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
-import img from '../../assets/img/camera-img.jpg';
+import img from '../../assets/img/camera-img.jpg'
 import { HashLink } from 'react-router-hash-link'
+import { device } from '../../assets/media'
 
 const Contact = styled.div`
     display: flex;
@@ -17,18 +17,25 @@ const Contact = styled.div`
         text-align:center;
         color:white;
         margin-bottom:2rem;
-        font-size: ${({ theme }) => theme.fontSize.m} ;
+        font-size: ${({ theme }) => theme.fontSize.s};
+        @media ${device.mobileM}{
+            font-size: ${({ theme }) => theme.fontSize.m};
+        }
     }
     button{
         width:9rem;
         background-color: ${({ theme }) => theme.color.mainColor};
         padding: 0.6rem 0;
-        font-size: ${({ theme }) => theme.fontSize.s};
+        font-size: ${({ theme }) => theme.fontSize.xs};
         color:white;
         border-radius:10px;
         border: 3px solid transparent;
         transition: background-color 300ms;
         cursor: pointer;
+
+        @media ${device.mobileM}{
+            font-size: ${({ theme }) => theme.fontSize.s};
+        }
 
         &:hover{
             background-color: transparent;
