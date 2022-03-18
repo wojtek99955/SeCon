@@ -23,15 +23,13 @@ export const Nav = styled.nav`
 
     }
     li {
-        font-size: ${({ theme }) => theme.fontSize.s};
+        font-size: ${({ theme }) => theme.fontSize.xs};
         font-weight: 500;
         cursor: pointer;
         text-align: center;
 
         @media ${device.tablet}{
             text-align: start;
-            font-size: ${({ theme }) => theme.fontSize.xs};
-
         }
     }
     h3{
@@ -92,17 +90,17 @@ export const StyledNavLink = styled(NavLink)`
 export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
-    padding: 0.8rem 2.5rem;
+    padding: 0.7rem 2rem;
     align-self: center;
     color:white;
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
     align-self: center;
-    font-size: ${({ theme }) => theme.fontSize.s};
+    font-size: ${({ theme }) => theme.fontSize.xs};
 
     @media ${device.tablet}{
-        padding: 0.6rem 2rem;
+        padding: 0.6rem 2.2rem;
     }
 
     @media ${device.laptop}{
