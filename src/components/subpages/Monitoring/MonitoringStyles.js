@@ -31,8 +31,8 @@ export const Detail = styled.div`
     justify-self: center;
     border: 1px solid #dedede;
     padding:1rem;
-    width:17rem;
-    height:16rem;
+    width: 16rem;
+    height:17.5rem;
     border-radius:8px;
 
     &:nth-of-type(5){
@@ -42,6 +42,7 @@ export const Detail = styled.div`
     h3{
         margin:1rem 0;
         font-size: ${({ theme }) => theme.fontSize.s};
+        text-align:center;
     }
     p{
             text-align:center;
