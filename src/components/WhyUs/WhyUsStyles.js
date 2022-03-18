@@ -33,6 +33,8 @@ export const NumberItem = styled.div`
     }
     p{
         margin-top: 0.5rem;
+        font-size: ${({ theme }) => theme.fontSize.xs};
+        color: #777777;
     }
 `
 
