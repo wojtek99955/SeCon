@@ -111,11 +111,11 @@ export const Form = styled.form`
         border: 3px solid #f7941c;
         border-radius: 10px;
         align-self: flex-start;
-        padding: 0.6rem 1.2rem;
+        padding: 0.6rem 0.6rem;
         color: white;
-        font-weight: 600;
+        font-weight: 400;
         cursor: pointer;
-        font-size: ${({ theme }) => theme.fontSize.s};
+        font-size: ${({ theme }) => theme.fontSize.xs};
         transition: background-color 300ms;
 
         @media ${device.laptop}{
@@ -185,7 +185,7 @@ export const TopContainer = styled.div`
     }
     button{
         background-color: ${({ theme }) => theme.color.mainColor};
-        padding: 0.8rem 2.5rem;
+        padding: 0.5rem 2rem;
         margin:auto;
         display: block;
         margin-top:1rem;
