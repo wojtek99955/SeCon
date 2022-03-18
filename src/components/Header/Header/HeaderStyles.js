@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
         z-index: 10;
         
         @media (max-width: 768px){
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
 `
 export const HeaderContainer = styled.div`

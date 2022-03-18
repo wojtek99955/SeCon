@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from '../src/assets/img/logo.jpeg'
+import { device } from './assets/media'
 
-const Container = styled.img`
-    width:5rem;
+const LogoImg = styled.img`
+    width:6rem;
+    @media ${device.tablet}{
+        width:5rem;
+    }
 `
 
 function Logo() {
     return (
-        <Container src={img} />
+        <LogoImg src={img} />
     )
 }
 
