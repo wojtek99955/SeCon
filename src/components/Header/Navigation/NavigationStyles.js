@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
 import { CaretDown } from '@styled-icons/boxicons-regular/CaretDown';
+import { device } from '../../../assets/media';
 
 export const Nav = styled.nav`
     display: flex;
@@ -9,7 +10,11 @@ export const Nav = styled.nav`
 export const Ul = styled.ul`
   list-style: none;
   display: flex;
-  gap:1rem;
+  gap: 0;
+
+  @media ${device.mobileM}{
+      gap:1rem;
+  }
 
     @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -24,7 +29,6 @@ export const Ul = styled.ul`
     transition: transform 0.5s ease-in-out;
     align-items: center;
     justify-content: center;
-    gap:1rem;
   }
 
 
@@ -32,27 +36,25 @@ export const Ul = styled.ul`
 
 `
 export const Li = styled.li`
-    font-size: 0.9rem;
-            cursor: pointer;
-            color: black;
-            font-weight: 600;
-            text-transform: uppercase;
-            padding:1rem 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:1rem 0;
 
             &:nth-of-type(2){
                 position:relative;
                 @media (max-width: 768px){
                     display:none;
-                    font-size: 1.5rem;
                 }
             }
-
-            @media (max-width: 768px){
+            @media ${device.mobileM}{
                 font-size: 2rem;
-
             }
-
-
+            @media ${device.tablet}{
+                font-size: 1rem;
+            }
 
             &:hover {
                 color: #f7941c;
@@ -62,13 +64,17 @@ export const Li = styled.li`
 
 export const LiMobile = styled.li`
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-align:center;
     font-weight:600;
+    padding: 1rem 0;
     
     @media (min-width: 769px){
         display: none;
+    }
+    @media ${device.mobileM}{
+        font-size: 2rem;
     }
 `
 export const StyledHashLink = styled(HashLink)`

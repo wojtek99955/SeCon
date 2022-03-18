@@ -29,20 +29,26 @@ const StyledNavLink = styled(NavLink)`
     @media (max-width: 768px){
         border-bottom: none;
         color: #777777;
+
+        &:last-of-type{
+            padding-bottom:0;
+        }
     }
   
 
     &:hover{
         color: ${({ theme }) => theme.color.mainColor};
     }
-    padding: 1rem 1rem;
+    padding: 0.8rem 0;
     &:first-of-type{
         padding-top:1rem;
     }
 
         @media (max-width: 768px){
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-transform: capitalize;
+        width:80%;
+        margin:auto;
     }
 
 `
