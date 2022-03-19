@@ -1,17 +1,24 @@
-import React from 'react'
-import { ContactSection, Container, Text, Form, Logo, MailIcon, TelIcon, LocationIcon, TopContainer } from './ContactStyles';
-import { Link } from 'react-scroll';
+import { useEffect } from 'react'
+import { ContactSection, Container, Text, Form, Logo, MailIcon, TelIcon, LocationIcon, TopContainer } from './ContactStyles'
+import { Link } from 'react-scroll'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Contact() {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <ContactSection id="contact">
-            <TopContainer>
+            <TopContainer >
                 <h3>Have any questions?</h3>
                 <h2>Skontaktuj się z nami po bezpłatną wycenę</h2>
                 <Link to="contact"><button>Kontakt</button></Link>
             </TopContainer>
             <Container>
-                <Text>
+                <Text data-aos="fade-right">
                     <h1>Kontakt</h1>
                     <Logo>SeCon</Logo>
                     <h2>Techniczna Ochrona Mienia</h2>
@@ -30,7 +37,7 @@ function Contact() {
 
                     </p>
                 </Text>
-                <Form>
+                <Form data-aos="fade-left">
                     <label htmlFor="name">Imię</label>
                     <input type="text" name="name" id="name" />
                     <label htmlFor="email">Email</label>
