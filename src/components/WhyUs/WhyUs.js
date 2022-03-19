@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { NumbersSection, Container, NumberItem, MedalIcon, ShieldIcon } from './WhyUsStyles';
+import { useState, useEffect, useRef } from 'react'
+import { NumbersSection, Container, NumberItem, MedalIcon, ShieldIcon } from './WhyUsStyles'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 function WhyUs() {
@@ -50,9 +52,13 @@ function WhyUs() {
         console.log("routesie zmienil")
     }, []);
 
+    useEffect(() => {
+        Aos.init({ duration: 800 })
+    }, []);
+
     return (
         <NumbersSection ref={numberRef}>
-            <Container>
+            <Container data-aos="fade-up">
                 <NumberItem>
                     <MedalIcon />
                     <h3>{experience} </h3>
