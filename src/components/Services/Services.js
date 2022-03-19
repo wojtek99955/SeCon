@@ -1,6 +1,8 @@
-import React from 'react'
-import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon } from './ServicesStyles';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react'
+import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon, Title } from './ServicesStyles'
+import { Link } from 'react-router-dom'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 function Services() {
@@ -30,13 +32,18 @@ function Services() {
         }
     ]
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
 
     return (
         <Section id="services">
             <Container>
-                <h2>Oferta</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero veritatis minus!</h3>
-                <ServicesWrapper>
+                <Title data-aos="fade-up">
+                    <h2 >Oferta</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero veritatis minus!</h3>
+                </Title>
+                <ServicesWrapper data-aos="fade-down" >
                     {services.map((service, id) => {
                         return (
                             <Service key={id}>

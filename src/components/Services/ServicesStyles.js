@@ -115,6 +115,9 @@ h3{
         
     }
 `
+export const Title = styled.div`
+    
+`
 
 export const CameraIcon = styled(CameraDome)`
     color: ${({ theme }) => theme.color.mainColor};

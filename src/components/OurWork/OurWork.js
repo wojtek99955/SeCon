@@ -1,10 +1,12 @@
-import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import img1 from '../../assets/img/slider1.jpeg'
 import img2 from '../../assets/img/slider2.jpeg'
 import img3 from '../../assets/img/slider3.jpeg'
 import { Section, Container, PrevIcon, NextIcon, FlipCard, SliderWrapper, StyledSlider } from './OurWorkStyles'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const PrevBtn = (props) => {
     console.log(props);
@@ -27,6 +29,10 @@ const NextBtn = (props) => {
 
 
 function OurWork() {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
 
     const settings = {
         dots: true,
@@ -52,8 +58,8 @@ function OurWork() {
     return (
         <Section id="projects">
             <Container>
-                <SliderWrapper>
-                    <h2>Realizacje</h2>
+                <h2 data-aos="fade-up">Realizacje</h2>
+                <SliderWrapper data-aos="fade-down">
                     <StyledSlider  {...settings}>
                         <FlipCard>
                             <div className="card-container">
