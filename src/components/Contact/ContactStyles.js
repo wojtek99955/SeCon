@@ -4,7 +4,7 @@ import { Mail } from '@styled-icons/feather/Mail'
 import { Location } from '@styled-icons/fluentui-system-regular/Location'
 import { Telephone } from '@styled-icons/bootstrap/Telephone'
 import img from '../../assets/img/contactimage.jpeg'
-import { scaleAnimation } from '../MainPage/MainPage'
+import { scaleAnimation } from '../MainPage/MainPageStyles'
 
 export const ContactSection = styled.section`
     padding: 3rem 1rem;
