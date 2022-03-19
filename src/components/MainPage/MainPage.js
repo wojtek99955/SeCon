@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import img from '../../assets/img/mainsection.jpeg'
 import { keyframes } from 'styled-components'
 import { device } from '../../assets/media'
+import { Link } from 'react-scroll'
 
 const StyledSection = styled.section`
     background: rgba(0, 0, 0, 0.4) url(${img});
@@ -51,12 +52,12 @@ const MainSection = styled.div`
         background-color: #f7941c;
         color: white;
         border: 5px solid #f7941c;
-        font-size: 1rem;
+        font-size: ${({ theme }) => theme.fontSize.s};
         margin-top: 2rem;
         cursor: pointer;
         margin-top: 3rem;
         border-radius: 10px;
-        font-weight: 600;
+        font-weight: 400;
         transition-property: background-color;
         transition-duration: 300ms;
         align-self: center;
@@ -71,6 +72,9 @@ const MainSection = styled.div`
         }
     }
 `
+const StyledLink = styled(Link)`
+    align-self: center;
+`
 
 function MainPage() {
     return (
@@ -79,7 +83,9 @@ function MainPage() {
                 <h1>
                     Safe And Secure Home <br /> For You And Your Family
                 </h1>
-                <button>Click here</button>
+                <StyledLink to="contact">
+                    <button>Kontakt</button>
+                </StyledLink>
             </MainSection>
         </StyledSection>
     )
