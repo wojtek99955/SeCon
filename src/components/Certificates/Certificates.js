@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Modal from './Modal';
-import { Container, GalleryContainer, ImageContainer, Image, Overlay, ZoomIcon } from './CertificatesStyles';
-import certificates from '../../certificates';
-
+import { useState, useEffect } from 'react'
+import Modal from './Modal'
+import { Container, GalleryContainer, ImageContainer, Image, Overlay, ZoomIcon } from './CertificatesStyles'
+import certificates from '../../certificates'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Certificates() {
 
@@ -14,11 +15,15 @@ function Certificates() {
         setModal(true);
     }
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <Container id="certificates">
-            <h2>Certyfikaty</h2>
+            <h2 data-aos="fade-up">Certyfikaty</h2>
             {modal ? <Modal imgsrc={imgSrc} modal={modal} setModal={setModal} /> : null}
-            <GalleryContainer>
+            <GalleryContainer data-aos="fade-down">
                 {certificates.map((item) => {
                     return (
                         <ImageContainer key={item.id} onClick={() => getImg(item.src)}>
