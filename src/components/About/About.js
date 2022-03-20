@@ -12,8 +12,8 @@ function About() {
     return (
         <Section id="about">
             <Container>
-                <StyledImg data-aos="fade-right" />
-                <AboutInfo data-aos="fade-left">
+                <StyledImg data-aos="fade-down" />
+                <AboutInfo data-aos="fade-up">
                     <h1>O nas</h1>
                     <h2>
                         Ponad 30 lat doświadczenia

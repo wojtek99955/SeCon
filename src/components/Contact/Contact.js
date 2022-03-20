@@ -18,7 +18,7 @@ function Contact() {
                 <Link to="contact"><button>Kontakt</button></Link>
             </TopContainer>
             <Container>
-                <Text data-aos="fade-right">
+                <Text data-aos="fade-up">
                     <h1>Kontakt</h1>
                     <Logo>SeCon</Logo>
                     <h2>Techniczna Ochrona Mienia</h2>
@@ -37,7 +37,7 @@ function Contact() {
 
                     </p>
                 </Text>
-                <Form data-aos="fade-left">
+                <Form data-aos="fade-down">
                     <label htmlFor="name">Imię</label>
                     <input type="text" name="name" id="name" />
                     <label htmlFor="email">Email</label>
