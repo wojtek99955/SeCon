@@ -87,7 +87,7 @@ export const Form = styled.form`
         border-radius: 10px;
         padding: 0.6rem 1rem;
         background-color: transparent;
-        border: 1px solid white;
+        border: 2px solid white;
         font-size: 1.2rem;
         color: white;
         outline: none;
