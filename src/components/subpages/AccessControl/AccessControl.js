@@ -3,6 +3,8 @@ import img from '../../../assets/img/kontrola-dostepu.png'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
 import ContactSubpages from '../ContactSubpages'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function AccessControl() {
 
@@ -10,11 +12,15 @@ function AccessControl() {
         document.title = "Secon - kontrola dostępu, rejestracja czasu pracy"
     }, []);
 
+    useEffect(() => {
+        Aos.init({ once: true, duration: 1000 })
+    }, []);
+
     return (
         <Section>
             <Container>
                 <ContentWrapper>
-                    <Title>
+                    <Title data-aos="fade-up">
                         <LockIcon />
                         <h2>System Kontroli Dostępu i Rejestracji Czasu Pracy</h2>
                         <p>Kontrola dostępu należy do najczęściej używanych
@@ -26,25 +32,25 @@ function AccessControl() {
                     </Title>
                     <ContentContainer>
                         <Description>
-                            <p>Należą do nich: zwykłe zamki szyfrowe, zamki
+                            <p data-aos="fade-up">Należą do nich: zwykłe zamki szyfrowe, zamki
                                 zbliżeniowe (breloki lub karty zbliżeniowe),
                                 klamki elektroniczne, domofony, wideodomofony, kamery, rej
                             </p>
-                            <p>Kontrola dostępu realizujemy przy użyciu
+                            <p data-aos="fade-up">Kontrola dostępu realizujemy przy użyciu
                                 sprzętu firm: Satel, KaDe, Roger, Unicard, Bosch.
                                 Na bazie sprzętu tych samych producentów realizujemy
                                 Systemy Rejestracji Czasu Pracy, wraz z oprogramowaniem
                                 i możliwością integracji z innymi systemami.
                             </p>
-                            <h3>Zastosowanie nawet prostej kontroli dostępu daje możliwość:</h3>
-                            <ul>
+                            <h3 data-aos="fade-up">Zastosowanie nawet prostej kontroli dostępu daje możliwość:</h3>
+                            <ul data-aos="fade-up">
                                 <li>integracji z systemami monitoringu i alarmowymi</li>
                                 <li> integracji z systemami rejestracji czasu pracy, wspomagania procesów produkcji, kontroli obecności itp.</li>
                             </ul>
-                            <p>Do rozliczania czasu pracy lub ewidencji – jeżeli istnieje taka potrzeba, wykorzystujemy oprogramowanie odpowiedniego producenta wraz z serwisem pogwarancyjnym.
+                            <p data-aos="fade-up">Do rozliczania czasu pracy lub ewidencji – jeżeli istnieje taka potrzeba, wykorzystujemy oprogramowanie odpowiedniego producenta wraz z serwisem pogwarancyjnym.
                             </p>
                         </Description>
-                        <Image src={img} />
+                        <Image src={img } data-aos="fade-up" />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>

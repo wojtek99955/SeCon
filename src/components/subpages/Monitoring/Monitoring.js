@@ -4,6 +4,8 @@ import { DetailsContainer, Detail, CarIcon, TransferIcon, RecordingIcon, GearIco
 import { Section, Container, Title, ContentWrapper, ContentContainer, Description, Image } from '../SubpagesStyles';
 import { CameraIcon } from '../../Services/ServicesStyles';
 import ContactSubpages from '../ContactSubpages';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 
@@ -44,11 +46,15 @@ function Monitoring() {
         document.title = "Secon - monitoring"
     }, []);
 
+    useEffect(() => {
+        Aos.init({ once: true, duration: 1000 })
+    }, []);
+
     return (
         <Section>
-            <Container>
+            <Container >
                 <ContentWrapper>
-                    <Title>
+                    <Title data-aos="fade-up">
                         <CameraIcon />
                         <h2>
                             Monitoring
@@ -63,7 +69,7 @@ function Monitoring() {
                     <ContentContainer>
                         <Description>
 
-                            <p>
+                            <p data-aos="fade-up">
                                 Różnorodność elementów występująca na rynku niesie
                                 za sobą ryzyko braku odpowiedniego doboru poszczególnych
                                 elementów.
@@ -73,8 +79,8 @@ function Monitoring() {
                                 BOSCH, APTI, HIK VISION i inne.
                             </p>
 
-                            <h3>Kamery</h3>
-                            <ul>
+                            <h3 data-aos="fade-up">Kamery</h3>
+                            <ul data-aos="fade-up">
                                 {
                                     cameraTypes.map((camera, id) => {
                                         return (
@@ -84,11 +90,11 @@ function Monitoring() {
                                 }
                             </ul>
                         </Description>
-                        <Image src={cameraicon} alt="camera" />
+                        <Image src={cameraicon} alt="camera" data-aos="fade-up" />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
-            <DetailsContainer>
+            <DetailsContainer data-aos="fade-up">
                 {monitoringDetails.map((detail, id) => {
                     return (
                         <Detail key={id}>

@@ -3,6 +3,8 @@ import alarmsImg from '../../../assets/img/alarms.png';
 import { Section, Container, ContentWrapper, Description, Image, Title, ContentContainer } from '../SubpagesStyles';
 import { useEffect } from 'react';
 import ContactSubpages from '../ContactSubpages';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const alarmTypes = ["włamaniowe", "napadowe", "pożarowe", "sterowanie: bramy, rolety, inne urządzenia", "kontrola dostępu: klawiatury kodowe, karty lub breloki zbliżeniowe"];
 
@@ -12,11 +14,15 @@ function Alarms() {
         document.title = "SeCon - systemy zabezpieczeń"
     }, []);
 
+    useEffect(() => {
+        Aos.init({ once: true, duration: 1000 })
+    }, []);
+
     return (
         <Section>
             <Container>
                 <ContentWrapper>
-                    <Title>
+                    <Title data-aos="fade-up">
                         <SecurityIcon />
                         <h2>Systemy zabezpieczeń</h2>
                         <p> Elektroniczne systemy zabezpieczeń tworzymy na bazie
@@ -25,8 +31,8 @@ function Alarms() {
                     </Title>
                     <ContentContainer>
                         <Description>
-                            <h3>Alarmy</h3>
-                            <ul>
+                            <h3 data-aos="fade-up">Alarmy</h3>
+                            <ul data-aos="fade-up">
                                 {
                                     alarmTypes.map((alarm, id) => {
                                         return (
@@ -36,7 +42,7 @@ function Alarms() {
                                 }
                             </ul>
                         </Description>
-                        <Image src={alarmsImg} />
+                        <Image src={alarmsImg} data-aos="fade-up" />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>
