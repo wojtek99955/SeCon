@@ -24,7 +24,7 @@ export const Burger = styled.div`
 export const Bar = styled.div`
     height: 4px;
     background-color: ${({ theme }) => theme.color.mainColor};
-    transform-origin:1px;
+    transform-origin:1.5px;
     border-radius: 10px;
     transition: all 0.3s linear;
 
