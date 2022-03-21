@@ -10,7 +10,7 @@ import WhyUs from '../WhyUs/WhyUs';
 function Home() {
 
     useEffect(() => {
-        document.title = "SeCon"
+        document.title = "SECON - techniczna ochrona mienia"
     }, []);
 
     return (

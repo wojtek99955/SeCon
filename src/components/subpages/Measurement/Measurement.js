@@ -12,7 +12,7 @@ const measurements = ["Pomiary parametrów pętli zwarcia", "Pomiary rezystancji
 function Measurement() {
 
     useEffect(() => {
-        document.title = "Secon - pomiary instalacji i urządzeń elektrycznych"
+        document.title = "SECON - pomiary instalacji i urządzeń elektrycznych"
     }, []);
 
     useEffect(() => {

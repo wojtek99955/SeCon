@@ -9,7 +9,7 @@ import "aos/dist/aos.css"
 function AccessControl() {
 
     useEffect(() => {
-        document.title = "Secon - kontrola dostępu, rejestracja czasu pracy"
+        document.title = "SECON - kontrola dostępu, rejestracja czasu pracy"
     }, []);
 
     useEffect(() => {

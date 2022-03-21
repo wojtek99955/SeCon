@@ -43,7 +43,7 @@ const cameraTypes = ["Stacjonarne", "Obrotowe", "Miniaturowe", `Kamery o kącie 
 function Monitoring() {
 
     useEffect(() => {
-        document.title = "Secon - monitoring"
+        document.title = "SECON - monitoring"
     }, []);
 
     useEffect(() => {

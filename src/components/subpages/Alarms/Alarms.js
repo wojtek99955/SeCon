@@ -11,7 +11,7 @@ const alarmTypes = ["włamaniowe", "napadowe", "pożarowe", "sterowanie: bramy, 
 function Alarms() {
 
     useEffect(() => {
-        document.title = "SeCon - systemy zabezpieczeń"
+        document.title = "SECON - systemy zabezpieczeń"
     }, []);
 
     useEffect(() => {

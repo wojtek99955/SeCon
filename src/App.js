@@ -16,7 +16,7 @@ import { useEffect } from 'react';
 function App() {
 
     useEffect(() => {
-        document.title = "This is a title"
+        document.title = "SECON - techniczna ochrona mienia"
     }, []);
     return (
         <div>
