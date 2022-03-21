@@ -47,7 +47,7 @@ export const MainSection = styled.main`
     }
 
     button {
-        padding: 0.8rem 2.2rem;
+        padding: 0.6rem 2.2rem;
         background-color: #f7941c;
         color: white;
         border: 5px solid #f7941c;
