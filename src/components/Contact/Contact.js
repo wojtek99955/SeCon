@@ -13,9 +13,10 @@ function Contact() {
     return (
         <ContactSection id="contact">
             <TopContainer >
-                <h3>Have any questions?</h3>
-                <h2>Skontaktuj się z nami po bezpłatną wycenę</h2>
-                <Link to="contact"><button>Kontakt</button></Link>
+
+                <h3 data-aos="fade-up" offset={200}>Have any questions?</h3>
+                <h2 data-aos="fade-up" offset={200} >Skontaktuj się z nami po bezpłatną wycenę</h2>
+                <Link data-aos="fade-up" offset={200} to="contact"><button>Kontakt</button></Link>
             </TopContainer>
             <Container>
                 <Text data-aos="fade-up">
