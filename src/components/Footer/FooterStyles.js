@@ -99,6 +99,9 @@ export const ContactButton = styled(HashLink)`
     align-self: center;
     font-size: ${({ theme }) => theme.fontSize.xs};
 
+    &:hover{
+        background-color: #c77007;
+    }
     @media ${device.tablet}{
         padding: 0.6rem 2.2rem;
     }
