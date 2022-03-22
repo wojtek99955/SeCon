@@ -25,7 +25,7 @@ export const GalleryContainer = styled.div`
         grid-template-columns: repeat(3, 11rem);
     }
     @media ${device.laptop}{
-        grid-template-columns: repeat(3, 13rem);
+        grid-template-columns: repeat(3, 16rem);
     }
 `
 

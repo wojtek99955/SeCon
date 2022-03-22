@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Section, Container, StyledImg, AboutInfo } from './AboutStyles'
+import { Section, Container, StyledImg, AboutInfo} from './AboutStyles'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 

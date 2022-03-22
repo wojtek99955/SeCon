@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import img from '../../assets/img/camera.jpeg'
 import { device } from '../../assets/media';
 import img2 from '../../assets/img/light-bgr.svg';
+import smallImg from '../../assets/img/alarms-about.png'
+
 
 export const Section = styled.section`
     padding: 4rem 2rem;
@@ -62,6 +64,25 @@ export const StyledImg = styled.div`
     border-right: 1.5rem solid #f7941c;
     border-bottom: 0.4rem solid #f7941c;
     margin-bottom: 0;
+    position:relative;
+
+    &::after{
+        content:"";
+        background-image: url(${smallImg});
+        width:14rem;
+        height:14rem;
+        position:absolute;
+        background-size:contain;
+        background-repeat:no-repeat;
+        bottom:-4rem;
+        right:-3rem;
+        display: none;
+
+        @media ${device.laptop}{
+            display:block;
+        }
+
+    }
 
     @media ${device.tablet}{
         width:40%;
@@ -105,4 +126,11 @@ export const AboutInfo = styled.div`
             margin-bottom: 0;
         }
     }
+`
+
+export const SmallImg = styled.img`
+    width:2rem;
+    height:2rem;
+    position:relative;
+    z-index:3;
 `
