@@ -10,7 +10,7 @@ function MainPage() {
     }, []);
 
     return (
-        <StyledSection >
+        <StyledSection id="main" >
             <MainSection data-aos="fade-up">
                 <h1>
                     Safe And Secure Home <br /> For You And Your Family

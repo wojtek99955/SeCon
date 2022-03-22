@@ -71,7 +71,7 @@ export const StyledHashLink = styled(HashLink)`
         padding: 0.4rem 0;
     }
 `
-export const StyledNavLink = styled(NavLink)`
+export const StyledNavLink = styled(HashLink)`
     text-decoration:none;
     color: #777777;
     display: block;
@@ -117,4 +117,8 @@ export const ContentWrapper = styled.div`
         justify-content: space-between;
     }
 
+`
+
+export const LogoLink = styled(HashLink)`
+    
 `

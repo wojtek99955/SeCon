@@ -1,7 +1,7 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 import logo from '../../assets/img/logo.jpeg'
-import { FooterSection, Container, Nav, BottomBar, Logo, StyledHashLink, StyledNavLink, ContactButton, ContentWrapper } from './FooterStyles'
+import { FooterSection, Container, Nav, BottomBar, Logo, StyledHashLink, StyledNavLink, ContactButton, ContentWrapper, LogoLink } from './FooterStyles'
 
 
 
@@ -15,7 +15,7 @@ function Footer() {
         <FooterSection>
             <Container>
                 <ContentWrapper>
-                    <StyledNavLink to="/"><Logo src={logo} /></StyledNavLink>
+                    <LogoLink to="/#main"><Logo src={logo} /></LogoLink>
                     <Nav>
                         <h3 onClick={scrollTop}>Secon</h3>
                         <ul>
