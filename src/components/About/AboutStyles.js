@@ -69,8 +69,8 @@ export const StyledImg = styled.div`
     &::after{
         content:"";
         background-image: url(${smallImg});
-        width:14rem;
-        height:14rem;
+        width:17rem;
+        height:17rem;
         position:absolute;
         background-size:contain;
         background-repeat:no-repeat;
@@ -97,6 +97,7 @@ export const AboutInfo = styled.div`
 @media ${device.tablet}{
     width:50%;
 }
+
 
     h1 {
         border-bottom: 0.4rem solid #f7941c;
