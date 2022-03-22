@@ -17,6 +17,7 @@ const DropdownContainer = styled.div`
         box-shadow: none;
         height:auto;
         border:none;
+        margin:auto;
     }
     
 `
@@ -25,25 +26,29 @@ const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     color:black;
     border-bottom: 1px solid #dedede;
+    white-space: nowrap;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #777777;
 
     @media (max-width: 768px){
         border-bottom: none;
-        color: #777777;
+        font-size: ${({theme}) => theme.fontSize.xs};
+        padding: 0.6rem 0;
+        white-space: normal;
+
+        &:last-of-type{
+            padding-bottom:0;
+        }
     }
   
 
     &:hover{
         color: ${({ theme }) => theme.color.mainColor};
     }
-    padding: 1rem 1rem;
+    padding: 0.8rem 1rem;
     &:first-of-type{
         padding-top:1rem;
-    }
-    @media (max-width: 768px){
-        font-size: 0.8rem;
-        &:last-of-type{
-            padding-bottom:0;
-        }
     }
 
 `
@@ -63,7 +68,7 @@ function Dropdown() {
             <StyledNavLink to="/uslugi/monitoring">Monitoring</StyledNavLink>
             <StyledNavLink to="/uslugi/systemy-zabezpieczen">Systemy zabezpieczeń</StyledNavLink>
             <StyledNavLink to="/uslugi/kontrola-dostepu-rejestracja-czasu-pracy">Kontrola dostępu</StyledNavLink>
-            <StyledNavLink to="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych">Pomiary instalacji i urządzeń elektrycznych</StyledNavLink>
+            <StyledNavLink to="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych">Pomiary instalacji i<br/> urządzeń elektrycznych</StyledNavLink>
         </DropdownContainer>
     )
 }
