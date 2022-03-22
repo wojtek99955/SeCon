@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import img from '../../assets/img/camera.jpeg'
 import { device } from '../../assets/media';
 import img2 from '../../assets/img/light-bgr.svg';
-import smallImg from '../../assets/img/alarms-about.png'
+import smallImg from '../../assets/img/services-access-control.jpg'
 
 
 export const Section = styled.section`
@@ -74,7 +74,7 @@ export const StyledImg = styled.div`
         position:absolute;
         background-size:contain;
         background-repeat:no-repeat;
-        bottom:-4rem;
+        bottom:-5rem;
         right:-3rem;
         display: none;
 
