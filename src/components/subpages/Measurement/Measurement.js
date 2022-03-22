@@ -1,5 +1,5 @@
 import { ElectricalIcon } from '../../Services/ServicesStyles'
-import img from '../../../assets/img/pomiary.jpeg'
+import img from '../../../assets/img/services-measurement.jpg'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
 import ContactSubpages from '../ContactSubpages'

@@ -1,5 +1,5 @@
 import { SecurityIcon } from '../../Services/ServicesStyles';
-import alarmsImg from '../../../assets/img/alarms.png';
+import alarmsImg from '../../../assets/img/services-alarms.jpg';
 import { Section, Container, ContentWrapper, Description, Image, Title, ContentContainer } from '../SubpagesStyles';
 import { useEffect } from 'react';
 import ContactSubpages from '../ContactSubpages';

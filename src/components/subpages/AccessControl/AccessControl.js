@@ -1,5 +1,5 @@
 import { LockIcon } from '../../Services/ServicesStyles'
-import img from '../../../assets/img/kontrola-dostepu.png'
+import img from '../../../assets/img/services-access-control.jpg'
 import { Section, Container, ContentWrapper, Title, ContentContainer, Description, Image } from '../SubpagesStyles'
 import { useEffect } from 'react'
 import ContactSubpages from '../ContactSubpages'
