@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from 'react-icons/md';
 import { MdOutlineNavigateBefore } from 'react-icons/md';
+import { device } from '../../assets/media';
 
 export const Section = styled.section`
     padding: 5rem 1rem ;
@@ -9,12 +10,6 @@ export const Section = styled.section`
 export const Container = styled.div`
     max-width: 1200px;
     margin:auto;
-
-    h2{
-        text-align: center;
-        text-decoration: ${({ theme }) => `underline solid ${theme.color.mainColor} 5px`};
-        text-underline-offset: 1rem;
-    }
 `
 
 export const PrevIcon = styled(MdOutlineNavigateBefore)`
@@ -127,5 +122,29 @@ li button:hover{
 
 }
 
+
+`
+
+export const Title = styled.div`
+
+  h2{
+    margin-bottom: 5rem;
+    text-align: center;
+    text-decoration: ${({ theme }) => `underline solid ${theme.color.mainColor} 5px`};
+    text-underline-offset: 1rem;
+    color:#777777;
+    font-size: ${({ theme }) => theme.fontSize.m}
+  }
+  h3{
+    text-align: center;
+    max-width:25rem;
+    margin:auto;
+    font-size: ${({ theme }) => theme.fontSize.xs};
+
+    @media ${device.tablet}{
+      margin-bottom:3rem;
+    }
+    
+  }
 
 `

@@ -7,11 +7,6 @@ export const Container = styled.div`
     margin:auto;
     padding-top:3rem;
     padding-bottom: 10rem;
-    h2{
-        text-align:center;
-        font-size: ${({ theme }) => theme.fontSize.m};
-        margin-bottom:2rem;
-    }
 `
 
 export const GalleryContainer = styled.div`
@@ -74,4 +69,27 @@ export const ZoomIcon = styled(ZoomIn)`
     @media ${device.tablet}{
         width:2.5rem;
     }
+`
+
+export const Title = styled.div`
+
+  h2{
+    margin-bottom: 5rem;
+    text-align: center;
+    text-decoration: ${({ theme }) => `underline solid ${theme.color.mainColor} 5px`};
+    text-underline-offset: 1rem;
+    color:#777777;
+    font-size: ${({ theme }) => theme.fontSize.m}
+  }
+  h3{
+    text-align: center;
+    max-width:25rem;
+    margin:auto;
+
+    @media ${device.tablet}{
+      margin-bottom:3rem;
+    }
+    
+  }
+
 `

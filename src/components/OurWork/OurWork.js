@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css"
 import img1 from '../../assets/img/slider1.jpeg'
 import img2 from '../../assets/img/slider2.jpeg'
 import img3 from '../../assets/img/slider3.jpeg'
-import { Section, Container, PrevIcon, NextIcon, FlipCard, SliderWrapper, StyledSlider } from './OurWorkStyles'
+import { Section, Container, PrevIcon, NextIcon, FlipCard, SliderWrapper, StyledSlider, Title } from './OurWorkStyles'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
@@ -58,7 +58,10 @@ function OurWork() {
     return (
         <Section id="projects">
             <Container>
+                <Title>
                 <h2 data-aos="fade-up">Realizacje</h2>
+                <h3>Dołącz do grona setek zadowolonych klientów!</h3>
+                </Title>
                 <SliderWrapper data-aos="fade-down">
                     <StyledSlider  {...settings}>
                         <FlipCard>
