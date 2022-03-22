@@ -39,9 +39,9 @@ function Services() {
     return (
         <Section id="services">
             <Container>
-                <Title data-aos="fade-up">
-                    <h2 >Oferta</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero veritatis minus!</h3>
+                <Title>
+                    <h2 data-aos="fade-up">Oferta</h2>
+                    <h3 data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero veritatis minus!</h3>
                 </Title>
                 <ServicesWrapper data-aos="fade-down" >
                     {services.map((service, id) => {

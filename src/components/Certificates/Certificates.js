@@ -23,7 +23,7 @@ function Certificates() {
         <Container id="certificates">
             <Title>
             <h2 data-aos="fade-up">Certyfikaty</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</h3>
+            <h3 data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</h3>
             </Title>
             {modal ? <Modal imgsrc={imgSrc} modal={modal} setModal={setModal} /> : null}
             <GalleryContainer data-aos="fade-down">

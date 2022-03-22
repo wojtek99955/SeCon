@@ -60,7 +60,7 @@ function OurWork() {
             <Container>
                 <Title>
                 <h2 data-aos="fade-up">Realizacje</h2>
-                <h3>Dołącz do grona setek zadowolonych klientów!</h3>
+                <h3 data-aos="fade-up">Dołącz do grona setek zadowolonych klientów!</h3>
                 </Title>
                 <SliderWrapper data-aos="fade-down">
                     <StyledSlider  {...settings}>
