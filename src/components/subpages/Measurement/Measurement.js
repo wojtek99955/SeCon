@@ -49,7 +49,7 @@ function Measurement() {
                             </p>
                             <p data-aos="fade-up">Usługi wykonujemy na terenie całego kraju.</p>
                         </Description>
-                        <Image data-aos="fade-up" src={img}></Image>
+                        <Image data-aos="fade-up" src={img} loading="lazy"></Image>
                     </ContentContainer>
                 </ContentWrapper>
             </Container>

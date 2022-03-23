@@ -50,7 +50,7 @@ function AccessControl() {
                             <p data-aos="fade-up">Do rozliczania czasu pracy lub ewidencji – jeżeli istnieje taka potrzeba, wykorzystujemy oprogramowanie odpowiedniego producenta wraz z serwisem pogwarancyjnym.
                             </p>
                         </Description>
-                        <Image src={img } data-aos="fade-up" />
+                        <Image src={img } data-aos="fade-up" loading="lazy" />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>

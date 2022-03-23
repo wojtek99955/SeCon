@@ -90,7 +90,7 @@ function Monitoring() {
                                 }
                             </ul>
                         </Description>
-                        <Image src={cameraicon} alt="camera" data-aos="fade-up" />
+                        <Image src={cameraicon} alt="camera" data-aos="fade-up" loading="lazy" />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>

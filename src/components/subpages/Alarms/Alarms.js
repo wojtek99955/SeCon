@@ -42,7 +42,7 @@ function Alarms() {
                                 }
                             </ul>
                         </Description>
-                        <Image src={alarmsImg} data-aos="fade-up" />
+                        <Image src={alarmsImg} data-aos="fade-up" loading="lazy" />
                     </ContentContainer>
                 </ContentWrapper>
             </Container>

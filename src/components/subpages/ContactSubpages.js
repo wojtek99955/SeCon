@@ -8,7 +8,7 @@ const Contact = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content: center;
-        background: rgba(0,0,0,0.6) url(${img});
+    background: rgba(0,0,0,0.6) url(${img});
     background-size: cover;
     height:25rem;
     background-position:center;
