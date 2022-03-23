@@ -28,7 +28,7 @@ function WhyUs() {
     useEffect(() => {
 
         const interval = setInterval(() => {
-            if (height === true && experience < 20) {
+            if (height === true && experience < 30) {
                 setExperience((prev) => prev + 1);
             }
         }, 50);
