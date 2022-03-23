@@ -14,9 +14,9 @@ function Contact() {
         <ContactSection id="contact">
             <TopContainer >
 
-                <h3 data-aos="fade-up" offset={200}>Have any questions?</h3>
-                <h2 data-aos="fade-up" offset={200} >Skontaktuj się z nami po bezpłatną wycenę</h2>
-                <Link data-aos="fade-up" offset={200} to="contact"><button>Kontakt</button></Link>
+                <h3 data-aos="fade-up">Have any questions?</h3>
+                <h2 data-aos="fade-up">Skontaktuj się z nami po bezpłatną wycenę</h2>
+                <Link to="contact"><button data-aos="fade-up">Kontakt</button></Link>
             </TopContainer>
             <Container>
                 <Text data-aos="fade-up">

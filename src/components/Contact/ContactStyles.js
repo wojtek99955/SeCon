@@ -43,6 +43,7 @@ export const Container = styled.div`
     @media ${device.tablet} {
         flex-direction: row;
         align-items: center;
+        gap:1rem;
     }
 `
 

@@ -106,6 +106,7 @@ h3{
         left: 0;
         right: 0;
         margin: auto;
+        font-size: ${({theme}) => theme.fontSize.xs};
 
         &:hover{
             background-color: #c77007;
