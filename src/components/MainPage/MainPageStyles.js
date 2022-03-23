@@ -10,8 +10,8 @@ export const StyledSection = styled.section`
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
     display: flex;
+    background-position: center;
 `
 
 export const scaleAnimation = keyframes`
