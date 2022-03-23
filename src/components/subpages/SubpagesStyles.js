@@ -95,13 +95,13 @@ export const Description = styled.div`
 `
 
 export const Image = styled.img`
-    width:90%;
+    width:100%;
     border-top: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
     border-right: ${({ theme }) => `1.3rem solid ${theme.color.mainColor}`};
     border-bottom: ${({ theme }) => `0.4rem solid ${theme.color.mainColor}`};
 
     @media ${device.mobileL}{
-        width:60%;
+        width:70%;
     }
     @media ${device.laptop}{
         width:45%;
