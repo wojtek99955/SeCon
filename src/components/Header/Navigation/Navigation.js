@@ -54,7 +54,7 @@ function Navigation({ open, setOpen }) {
                     </StyledHashLink>
                     <Dropdown />
                 </LiMobile>
-                <Li><StyledHashLink to="/#projects" onClick={handleCloseNav}>Projekty</StyledHashLink></Li>
+                <Li><StyledHashLink to="/#projects" onClick={handleCloseNav}>Realizacje</StyledHashLink></Li>
                 <Li> <StyledHashLink to="/#certificates" onClick={handleCloseNav}>Certyfikaty</StyledHashLink></Li>
                 <Li> <StyledHashLink to="/#contact" onClick={handleCloseNav}> Kontakt</StyledHashLink></Li>
             </Ul>
