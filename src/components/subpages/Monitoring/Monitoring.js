@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import cameraicon from '../../../assets/img/services-monitoring.jpeg'
+import cameraicon from '../../../assets/img/services-monitoring-compressed.jpg'
 import { DetailsContainer, Detail, CarIcon, TransferIcon, RecordingIcon, GearIcon, HandIcon } from './MonitoringStyles';
 import { Section, Container, Title, ContentWrapper, ContentContainer, Description, Image } from '../SubpagesStyles';
 import { CameraIcon } from '../../Services/ServicesStyles';
