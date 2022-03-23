@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import img from '../../assets/img/mainsection.jpeg'
+import img from '../../assets/img/mainpage.jpg'
 import { keyframes } from 'styled-components'
 import { device } from '../../assets/media'
 import { Link } from 'react-scroll'
