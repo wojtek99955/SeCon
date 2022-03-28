@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../../assets/media'
 import { HashLink } from 'react-router-hash-link';
-import { NavLink } from 'react-router-dom'
 
 export const FooterSection = styled.footer``
 
@@ -30,6 +29,7 @@ export const Nav = styled.nav`
 
         @media ${device.tablet}{
             text-align: start;
+            font-size: ${({ theme }) => theme.fontSize.xxs};
         }
     }
     h3{
@@ -91,13 +91,15 @@ export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
     padding: 0.7rem 2rem;
-    align-self: center;
     color:white;
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    align-self: center;
     font-size: ${({ theme }) => theme.fontSize.xs};
+    display:block;
+    margin-top:1rem;
+    margin-left: auto;
+    margin-right:auto;
 
     &:hover{
         background-color: #c77007;
@@ -124,4 +126,24 @@ export const ContentWrapper = styled.div`
 
 export const LogoLink = styled(HashLink)`
     
+`
+
+export const ContactInfo = styled.div`
+    flex-direction: column;
+    display: flex;
+
+    
+    p{
+    margin-top: 0.5rem;
+    text-align: center ;
+    font-size: ${({ theme }) => theme.fontSize.xs};
+
+    @media ${device.tablet}{
+        font-size: ${({ theme }) => theme.fontSize.xxs};
+    }
+
+    @media ${device.tablet}{
+        text-align: left;
+    }
+    }
 `

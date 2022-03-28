@@ -1,7 +1,8 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 import logo from '../../assets/img/logo.jpeg'
-import { FooterSection, Container, Nav, BottomBar, Logo, StyledHashLink, StyledNavLink, ContactButton, ContentWrapper, LogoLink } from './FooterStyles'
+import { FooterSection, Container, Nav, BottomBar, Logo, StyledHashLink, StyledNavLink, ContactButton, ContentWrapper, LogoLink, ContactInfo } from './FooterStyles'
+import {LocationIcon, TelIcon, MailIcon} from '../Contact/ContactStyles'
 
 
 
@@ -35,7 +36,11 @@ function Footer() {
                             <li><StyledNavLink to="/uslugi/pomiary-instalacji-i-urzadzen-elektrycznych">pomiary instalacji elektrycznej</StyledNavLink></li>
                         </ul>
                     </Nav>
-                    <ContactButton to="/#contact">Kontakt</ContactButton>
+                    <ContactInfo>
+                        <p><TelIcon/>+48 602 36 99 87</p>
+                        <p><MailIcon/> biuro@secon.com.pl</p>
+                        <ContactButton to="/#contact">Kontakt</ContactButton>
+                    </ContactInfo>
                 </ContentWrapper>
             </Container>
             <BottomBar />
