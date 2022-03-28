@@ -18,7 +18,8 @@ const Contact = styled.div`
         color:white;
         margin-bottom:2rem;
         font-size: ${({ theme }) => theme.fontSize.s};
-        @media ${device.mobileM}{
+        padding: 0 1rem;
+        @media ${device.mobileL}{
             font-size: ${({ theme }) => theme.fontSize.m};
         }
     }
