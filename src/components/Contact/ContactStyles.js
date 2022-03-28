@@ -57,8 +57,11 @@ export const Text = styled.div`
         font-weight:400;
     }
     p {
-        font-size: ${({ theme }) => theme.fontSize.xs};
+        font-size: ${({ theme }) => theme.fontSize.xxs};
         margin-bottom: 0.8rem;
+        @media ${device.laptop}{
+            font-size: ${({ theme }) => theme.fontSize.xs};
+        }
 
         &:first-of-type{
             display: flex;
