@@ -74,7 +74,7 @@ export const StyledImg = styled.div`
         position:absolute;
         background-size:contain;
         background-repeat:no-repeat;
-        bottom:-5rem;
+        bottom:-6rem;
         right:-3rem;
         display: none;
 
@@ -127,11 +127,4 @@ export const AboutInfo = styled.div`
             margin-bottom: 0;
         }
     }
-`
-
-export const SmallImg = styled.img`
-    width:2rem;
-    height:2rem;
-    position:relative;
-    z-index:3;
 `
