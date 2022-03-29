@@ -80,6 +80,12 @@ position: relative;
 width:100%;
 box-shadow: 0px 3px 13px -8px rgba(66, 68, 90, 1);
 max-width:15rem;
+transition: transform;
+transition-duration: 400ms;
+
+&:hover{
+    transform: scale(1.1);
+}
 
 
 
