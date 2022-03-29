@@ -1,10 +1,7 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 import logo from '../../assets/img/logo.jpeg'
-import { FooterSection, Container, Nav, BottomBar, Logo, StyledHashLink, StyledNavLink, ContactButton, ContentWrapper, LogoLink, ContactInfo } from './FooterStyles'
-import {LocationIcon, TelIcon, MailIcon} from '../Contact/ContactStyles'
-
-
+import { FooterSection, Container, Nav, BottomBar, Logo, StyledHashLink, StyledNavLink, ContactButton, ContentWrapper, LogoLink, ContactInfo, StyledMailIcon, StyledPhoneIcon} from './FooterStyles'
 
 function Footer() {
 
@@ -37,8 +34,8 @@ function Footer() {
                         </ul>
                     </Nav>
                     <ContactInfo>
-                        <p><TelIcon/>+48 602 36 99 87</p>
-                        <p><MailIcon/> biuro@secon.com.pl</p>
+                        <p><StyledPhoneIcon/>+48 602 36 99 87</p>
+                        <p><StyledMailIcon/> biuro@secon.com.pl</p>
                         <ContactButton to="/#contact">Kontakt</ContactButton>
                     </ContactInfo>
                 </ContentWrapper>

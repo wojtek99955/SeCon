@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../../assets/media'
 import { HashLink } from 'react-router-hash-link';
+import {MailIcon, TelIcon} from '../Contact/ContactStyles';
 
 export const FooterSection = styled.footer``
 
@@ -146,4 +147,13 @@ export const ContactInfo = styled.div`
         text-align: left;
     }
     }
+`
+
+export const StyledMailIcon = styled(MailIcon)`
+    color: ${({ theme }) => theme.color.mainColor};
+    width:1.2rem;
+`
+
+export const StyledPhoneIcon = styled(TelIcon)`
+    width: 1.2rem;
 `

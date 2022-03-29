@@ -74,19 +74,19 @@ export const ServicesWrapper = styled.div`
 
 export const Button = styled.button`
 
-        width:7rem;
-        padding: 0.5rem 0;
-        border-radius: 5px;
-        background-color: ${({ theme }) => theme.color.mainColor};
-        color: white;
-        border:none;
-        cursor: pointer;
-        position: absolute;
-        bottom: 1rem;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-size: ${({theme}) => theme.fontSize.xs};
+    width:7rem;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    background-color: ${({ theme }) => theme.color.mainColor};
+    color: white;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: ${({theme}) => theme.fontSize.xs};
 
         &:hover{
             background-color: #c77007;
