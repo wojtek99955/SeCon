@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon, Title } from './ServicesStyles'
+import { Section, Container, ServicesWrapper, Service, CameraIcon, ElectricalIcon, SecurityIcon, LockIcon, Title, Button } from './ServicesStyles'
 import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -50,7 +50,7 @@ function Services() {
                                 {service.img}
                                 <h3>{service.service}</h3>
                                 <p>{service.description}</p>
-                                <Link to={{ pathname: `${service.url}` }}><button>Więcej</button></Link>
+                                <Link to={{ pathname: `${service.url}` }}><Button>Więcej</Button></Link>
                             </Service>
                         )
                     })}

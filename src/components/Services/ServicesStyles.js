@@ -4,6 +4,7 @@ import { ElectricalServices } from '@styled-icons/material-twotone/ElectricalSer
 import { device } from '../../assets/media';
 import { Security } from '@styled-icons/material/Security';
 import { Lock } from '@styled-icons/boxicons-regular/Lock';
+import {scaleAnimation} from '../MainPage/MainPageStyles';
 
 export const Section = styled.section`
 background-color: #F6F6F6;
@@ -70,36 +71,9 @@ export const ServicesWrapper = styled.div`
     }
 
 `
-export const Service = styled.div`
-background-color: white;
-padding: 2rem;
-display: flex;
-flex-direction: column;
-height: 19rem;
-position: relative;
-width:100%;
-box-shadow: 0px 3px 13px -8px rgba(66, 68, 90, 1);
-max-width:15rem;
-transition: transform;
-transition-duration: 400ms;
 
-&:hover{
-    transform: scale(1.1);
-}
+export const Button = styled.button`
 
-
-
-h3{
-    color:black;
-    text-align: center;
-    font-size: ${({ theme }) => theme.fontSize.s};
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
-
-    button{
         width:7rem;
         padding: 0.5rem 0;
         border-radius: 5px;
@@ -116,11 +90,43 @@ h3{
 
         &:hover{
             background-color: #c77007;
+            
         }
-        
+`
 
-        
+export const Service = styled.div`
+background-color: white;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+height: 19rem;
+position: relative;
+width:100%;
+box-shadow: 0px 3px 13px -8px rgba(66, 68, 90, 1);
+max-width:15rem;
+transition: transform;
+transition-duration: 400ms;
+
+    &:hover{
+        transform: scale(1.1);
     }
+    &:hover ${Button}{
+        animation: ${scaleAnimation};
+        animation-duration: 300ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+}
+
+h3{
+    color:black;
+    text-align: center;
+    font-size: ${({ theme }) => theme.fontSize.s};
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}    
 `
 export const Title = styled.div`
     
