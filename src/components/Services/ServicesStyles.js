@@ -90,7 +90,6 @@ export const Button = styled.button`
 
         &:hover{
             background-color: #c77007;
-            
         }
 `
 

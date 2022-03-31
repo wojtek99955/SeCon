@@ -101,6 +101,7 @@ export const ContactButton = styled(HashLink)`
     margin-top:1rem;
     margin-left: auto;
     margin-right:auto;
+    margin-top:2rem;
 
     &:hover{
         background-color: #c77007;
