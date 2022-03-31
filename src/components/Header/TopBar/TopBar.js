@@ -47,7 +47,7 @@ function TopBar({ fixed, forwardedRef }) {
             <Container>
                 <ItemContainer>
                     <MailIcon />
-                    <h3>support@secon.com</h3>
+                    <h3>biuro@secon.com.pl</h3>
                 </ItemContainer>
                 <ItemContainer>
                     <LocationIcon />
