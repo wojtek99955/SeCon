@@ -34,9 +34,10 @@ function Footer() {
                         </ul>
                     </Nav>
                     <ContactInfo>
+                        <h3>Kontakt</h3>
                         <a href="tel:+48602369987"><StyledPhoneIcon/>+48 602 36 99 87</a>
                         <a href="mailto:biuro@secon.com.pl"><StyledMailIcon/> biuro@secon.com.pl</a>
-                        <ContactButton to="/#contact">Kontakt</ContactButton>
+                        <ContactButton to="/#contact">Napisz wiadomość</ContactButton>
                     </ContactInfo>
                 </ContentWrapper>
             </Container>

@@ -91,7 +91,7 @@ export const StyledNavLink = styled(HashLink)`
 export const ContactButton = styled(HashLink)`
     background-color: ${({ theme }) => theme.color.mainColor};
     border: none;
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1rem;
     color:white;
     border-radius: 10px;
     cursor: pointer;
@@ -99,18 +99,12 @@ export const ContactButton = styled(HashLink)`
     font-size: ${({ theme }) => theme.fontSize.xs};
     display:block;
     margin-top:1rem;
-    margin-left: auto;
-    margin-right:auto;
 
     &:hover{
         background-color: #c77007;
     }
     @media ${device.tablet}{
-        padding: 0.6rem 2.2rem;
-    }
-
-    @media ${device.laptop}{
-        align-self: flex-start;
+        padding: 0.6rem 0.5rem;
     }
 `
 export const ContentWrapper = styled.div`
@@ -132,6 +126,23 @@ export const LogoLink = styled(HashLink)`
 export const ContactInfo = styled.div`
     flex-direction: column;
     display: flex;
+    align-items: center;
+
+    @media ${device.tablet}{
+        align-items: flex-start;
+    }
+
+    h3{
+        font-size: ${({ theme }) => theme.fontSize.m};
+        text-transform: uppercase;
+        margin-bottom:1rem;
+        text-align:center;
+
+        @media ${device.tablet}{
+            text-align: start;
+            font-size: ${({ theme }) => theme.fontSize.s}
+        }
+    }
 
     a{
         text-decoration: none;
