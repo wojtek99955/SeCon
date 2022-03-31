@@ -101,7 +101,6 @@ export const ContactButton = styled(HashLink)`
     margin-top:1rem;
     margin-left: auto;
     margin-right:auto;
-    margin-top:2rem;
 
     &:hover{
         background-color: #c77007;
@@ -134,19 +133,33 @@ export const ContactInfo = styled.div`
     flex-direction: column;
     display: flex;
 
-    
-    p{
-    margin-top: 0.5rem;
-    text-align: center ;
-    font-size: ${({ theme }) => theme.fontSize.xs};
+    a{
+        text-decoration: none;
+        color: black;
+        margin-top: 0.5rem;
+        text-align: center ;
+        font-size: ${({ theme }) => theme.fontSize.xs};
 
-    @media ${device.tablet}{
-        font-size: ${({ theme }) => theme.fontSize.xxs};
-    }
+        &:nth-of-type(2){
+            margin-bottom: 1.5rem;
 
-    @media ${device.tablet}{
-        text-align: left;
-    }
+            @media ${device.tablet}{
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        &:last-of-type{
+            color:white;
+        }
+
+
+        @media ${device.tablet}{
+            font-size: ${({ theme }) => theme.fontSize.xxs};
+        }
+
+        @media ${device.tablet}{
+            text-align: left;
+        }
     }
 `
 
