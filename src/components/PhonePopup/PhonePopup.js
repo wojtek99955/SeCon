@@ -1,18 +1,28 @@
+import {useState} from 'react'
 import styled from 'styled-components'
 import {Phone} from '@styled-icons/boxicons-solid/Phone'
 import {CloseOutline} from '@styled-icons/evaicons-outline/CloseOutline'
+import {device} from '../../assets/media'
 
 const PhoneIcon = styled(Phone)`
-    width:3rem;
+    width:2rem;
     position: absolute;
     color: white;
+
+    @media ${device.tablet}{
+        width: 3rem;
+    }
 `
 
 const Container = styled.div`
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 50%;
     background-color: ${({theme}) => theme.color.mainColor};
     cursor: pointer;
+
+    @media ${device.tablet}{
+        padding: 2.5rem;
+    }
 
     a{
         display: block;
@@ -22,14 +32,13 @@ const Container = styled.div`
     }
 `
 const Wrapper = styled.div`
-    width: 6rem;
-    height:6rem;
     position: fixed;
-    top: 90%;
+    top: 88%;
     left: 1rem;
-    display: flex;
+    display: ${({close}) => close? "none" : "flex"};
     justify-content: center;
     align-items: center;
+    z-index: 10;
 `
 const CloseIcon = styled(CloseOutline)`
     width:1rem;
@@ -42,9 +51,12 @@ const CloseIcon = styled(CloseOutline)`
 `
 
 function PhonePopup() {
+
+    const [close, setClose] = useState(false);
+    const handleClose = () => setClose(!close);
   return (
-        <Wrapper>
-            <CloseIcon/>
+        <Wrapper close={close}>
+            <CloseIcon onClick={handleClose}/>
         <Container>
             <a href="tel:+48602369987"><PhoneIcon/></a>
         </Container>
