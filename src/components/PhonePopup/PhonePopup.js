@@ -11,17 +11,24 @@ const Container = styled.div`
     position: fixed;
     top: 90%;
     left: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 2.5rem;
     border-radius: 50%;
     background-color: ${({theme}) => theme.color.mainColor};
+    cursor: pointer;
+
+    a{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 function PhonePopup() {
   return (
-    <Container><PhoneIcon/></Container>
+    <Container>
+        <a href="tel:+48602369987"><PhoneIcon/></a>
+        </Container>
   )
 }
 
