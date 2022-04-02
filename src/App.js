@@ -11,6 +11,7 @@ import Alarms from './components//subpages/Alarms/Alarms'
 import AccessControl from './components/subpages/AccessControl/AccessControl'
 import Measurement from './components/subpages/Measurement/Measurement'
 import { useEffect } from 'react';
+import PhonePopup from './components/PhonePopup/PhonePopup';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <GlobalStyles />
             <ThemeProvider theme={theme}>
                 <ScrollTopButton />
+                <PhonePopup/>
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
