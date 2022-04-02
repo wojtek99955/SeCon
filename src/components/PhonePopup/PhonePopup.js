@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Phone} from '@styled-icons/boxicons-solid/Phone'
+import {CloseOutline} from '@styled-icons/evaicons-outline/CloseOutline'
 
 const PhoneIcon = styled(Phone)`
     width:3rem;
@@ -8,9 +9,6 @@ const PhoneIcon = styled(Phone)`
 `
 
 const Container = styled.div`
-    position: fixed;
-    top: 90%;
-    left: 1rem;
     padding: 2.5rem;
     border-radius: 50%;
     background-color: ${({theme}) => theme.color.mainColor};
@@ -23,12 +21,34 @@ const Container = styled.div`
         align-items: center;
     }
 `
+const Wrapper = styled.div`
+    width: 6rem;
+    height:6rem;
+    position: fixed;
+    top: 90%;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+const CloseIcon = styled(CloseOutline)`
+    width:1rem;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    color: #777777;
+    cursor: pointer;
+
+`
 
 function PhonePopup() {
   return (
-    <Container>
-        <a href="tel:+48602369987"><PhoneIcon/></a>
+        <Wrapper>
+            <CloseIcon/>
+        <Container>
+            <a href="tel:+48602369987"><PhoneIcon/></a>
         </Container>
+        </Wrapper>
   )
 }
 
