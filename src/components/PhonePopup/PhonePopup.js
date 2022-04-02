@@ -35,10 +35,38 @@ const Wrapper = styled.div`
     position: fixed;
     top: 88%;
     left: 1rem;
-    display: ${({close}) => close? "none" : "flex"};
+    display: ${({show}) => show? "flex" : "none"};
     justify-content: center;
     align-items: center;
     z-index: 10;
+    animation-name: bounce;
+        animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+        animation-duration: 1600ms;
+        animation-iteration-count: 3;
+
+    @keyframes bounce {
+        0%{
+            transform: scale(1,1) translateY(0);
+        }
+        10%{ 
+            transform: scale(1.1,.9) translateY(0); 
+        }
+        30%{ 
+            transform: scale(.9,1.1) translateY(-100px); 
+        }
+        50%{ 
+            transform: scale(1.05,.95) translateY(0); 
+        }
+        57%{ 
+            transform: scale(1,1) translateY(-7px); 
+        }
+        64%{ 
+            transform: scale(1,1) translateY(0); 
+        }
+        100%{ 
+            transform: scale(1,1) translateY(0); 
+        }
+    }
 `
 const CloseIcon = styled(CloseOutline)`
     width:1rem;
@@ -52,15 +80,18 @@ const CloseIcon = styled(CloseOutline)`
 
 function PhonePopup() {
 
-    const [close, setClose] = useState(false);
-    const handleClose = () => setClose(!close);
+    const [show, setShow] = useState(true);
+    const handleClose = () => setShow(!show);
+
   return (
-        <Wrapper close={close}>
+
+        <Wrapper show={show} >
             <CloseIcon onClick={handleClose}/>
-        <Container>
-            <a href="tel:+48602369987"><PhoneIcon/></a>
-        </Container>
+            <Container>
+                <a href="tel:+48602369987"><PhoneIcon/></a>
+            </Container>
         </Wrapper>
+
   )
 }
 
