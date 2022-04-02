@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import {Phone} from '@styled-icons/boxicons-solid/Phone'
 import {CloseOutline} from '@styled-icons/evaicons-outline/CloseOutline'
@@ -79,19 +79,31 @@ const CloseIcon = styled(CloseOutline)`
 `
 
 function PhonePopup() {
-
-    const [show, setShow] = useState(true);
+    
+    const [show, setShow] = useState(false);
     const handleClose = () => setShow(!show);
 
+        useEffect(() => {
+            const timer = setTimeout(() => {
+                setShow(true);
+                console.log(show);
+            }, 3000);
+            return () => clearTimeout(timer);
+        },[]);
+    
   return (
-
+      <>
+      {
+          show?(
         <Wrapper show={show} >
             <CloseIcon onClick={handleClose}/>
-            <Container>
-                <a href="tel:+48602369987"><PhoneIcon/></a>
-            </Container>
-        </Wrapper>
-
+        <Container>
+            <a href="tel:+48602369987"><PhoneIcon/></a>
+        </Container>
+        </Wrapper>)
+        : null
+      }
+      </>
   )
 }
 
