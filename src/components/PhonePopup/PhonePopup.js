@@ -21,7 +21,7 @@ const Container = styled.div`
     cursor: pointer;
 
     @media ${device.tablet}{
-        padding: 2.5rem;
+        padding: 2.2rem;
     }
 
     a{
@@ -40,9 +40,9 @@ const Wrapper = styled.div`
     align-items: center;
     z-index: 10;
     animation-name: bounce;
-        animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-        animation-duration: 1600ms;
-        animation-iteration-count: 3;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 1600ms;
+    animation-iteration-count: 4;
 
     @keyframes bounce {
         0%{
@@ -94,13 +94,13 @@ function PhonePopup() {
   return (
       <>
       {
-          show?(
-        <Wrapper show={show} >
-            <CloseIcon onClick={handleClose}/>
-        <Container>
-            <a href="tel:+48602369987"><PhoneIcon/></a>
-        </Container>
-        </Wrapper>)
+        show?(
+            <Wrapper show={show} >
+                <CloseIcon onClick={handleClose}/>
+                <Container>
+                    <a href="tel:+48602369987"><PhoneIcon/></a>
+                </Container>
+            </Wrapper>)
         : null
       }
       </>
