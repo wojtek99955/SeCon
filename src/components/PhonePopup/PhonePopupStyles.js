@@ -34,7 +34,7 @@ export const CloseIcon = styled(CloseCircleOutline)`
     width: 1rem;
     position: absolute;
     top: 0;
-    right: -1rem;
+    right: 0;
     color: #777777;
     cursor: pointer;
 
@@ -50,6 +50,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 10;
+    padding-right: 2rem;
     animation-name: bounce;
     animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
     animation-duration: 1600ms;
