@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Phone } from '@styled-icons/boxicons-solid/Phone'
-import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
+import { CloseCircleOutline } from '@styled-icons/evaicons-outline/CloseCircleOutline'
 import { device } from '../../assets/media'
 
 export const PhoneIcon = styled(Phone)`
@@ -30,7 +30,7 @@ export const Container = styled.div`
         align-items: center;
     }
 `
-export const CloseIcon = styled(CloseOutline)`
+export const CloseIcon = styled(CloseCircleOutline)`
     width: 1rem;
     position: absolute;
     top: 0;
