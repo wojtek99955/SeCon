@@ -30,6 +30,18 @@ export const Container = styled.div`
         align-items: center;
     }
 `
+export const CloseIcon = styled(CloseOutline)`
+    width: 1rem;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    color: #777777;
+    cursor: pointer;
+
+    @media ${device.tablet} {
+        display: none;
+    }
+`
 export const Wrapper = styled.div`
     position: fixed;
     top: 88%;
@@ -42,6 +54,12 @@ export const Wrapper = styled.div`
     animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
     animation-duration: 1600ms;
     animation-iteration-count: 4;
+
+    @media ${device.tablet} {
+        &:hover ${CloseIcon} {
+            display: block;
+        }
+    }
 
     @keyframes bounce {
         0% {
@@ -66,12 +84,4 @@ export const Wrapper = styled.div`
             transform: scale(1, 1) translateY(0);
         }
     }
-`
-export const CloseIcon = styled(CloseOutline)`
-    width: 1rem;
-    position: absolute;
-    top: 0;
-    right: -1rem;
-    color: #777777;
-    cursor: pointer;
 `
