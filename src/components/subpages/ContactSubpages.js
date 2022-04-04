@@ -6,42 +6,41 @@ import { device } from '../../assets/media'
 const Contact = styled.div`
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.6) url(${img});
+    background: rgba(0, 0, 0, 0.6) url(${img});
     background-size: cover;
-    height:25rem;
-    background-position:center;
+    height: 25rem;
+    background-position: center;
     background-blend-mode: darken;
-    h3{
-        text-align:center;
-        color:white;
-        margin-bottom:2rem;
+    h3 {
+        text-align: center;
+        color: white;
+        margin-bottom: 2rem;
         font-size: ${({ theme }) => theme.fontSize.s};
         padding: 0 1rem;
-        @media ${device.mobileL}{
+        @media ${device.mobileL} {
             font-size: ${({ theme }) => theme.fontSize.m};
         }
     }
-    button{
-        width:9rem;
+    button {
+        width: 9rem;
         background-color: ${({ theme }) => theme.color.mainColor};
         padding: 0.6rem 0;
         font-size: ${({ theme }) => theme.fontSize.xs};
-        color:white;
-        border-radius:10px;
+        color: white;
+        border-radius: 10px;
         border: 3px solid transparent;
         transition: background-color 300ms;
         cursor: pointer;
 
-        @media ${device.mobileM}{
+        @media ${device.mobileM} {
             font-size: ${({ theme }) => theme.fontSize.s};
         }
 
-        &:hover{
+        &:hover {
             background-color: transparent;
             border: ${({ theme }) => `3px solid ${theme.color.mainColor}`};
-
         }
     }
 `
@@ -49,8 +48,10 @@ const Contact = styled.div`
 function ContactSubpages() {
     return (
         <Contact>
-            <h3>Skontaktuj się po indywidualną wycenę!</h3>
-            <HashLink to="/#contact"><button>Kontakt</button></HashLink>
+            <h3 data-aos="fade-up">Skontaktuj się po indywidualną wycenę!</h3>
+            <HashLink to="/#contact">
+                <button data-aos="fade-up">Kontakt</button>
+            </HashLink>
         </Contact>
     )
 }
