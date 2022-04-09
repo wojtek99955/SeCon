@@ -44,7 +44,7 @@ export const CloseIcon = styled(CloseCircleOutline)`
 `
 export const Wrapper = styled.div`
     position: fixed;
-    top: 88%;
+    bottom: 1rem;
     left: 1rem;
     display: ${({ show }) => (show ? 'flex' : 'none')};
     justify-content: center;
