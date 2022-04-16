@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Container = styled.section`
     height: 100vh;
@@ -9,6 +10,11 @@ const Container = styled.section`
     background-color: #f6f6f6;
 `
 const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 3rem;
     h2,
     h3,
     p {
@@ -28,6 +34,13 @@ const Wrapper = styled.div`
         padding: 2rem;
     }
 `
+const BackBtn = styled(Link)`
+    background: ${({ theme }) => theme.color.mainColor};
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+`
 
 function NoMatch() {
     return (
@@ -38,6 +51,7 @@ function NoMatch() {
                 </h2>
                 <h3>Oops...</h3>
                 <p>Page Not Found</p>
+                <BackBtn to="/">Strona główna</BackBtn>
             </Wrapper>
         </Container>
     )
