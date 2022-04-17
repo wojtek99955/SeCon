@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     background: white;
-    padding: 3rem;
+    padding: 5rem;
     h2,
     h3,
     p {
