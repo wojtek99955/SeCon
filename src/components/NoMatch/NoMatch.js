@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     align-items: center;
     background: white;
     padding: 5rem;
+    border-radius: 10px;
     h2,
     h3,
     p {
@@ -40,6 +41,9 @@ const BackBtn = styled(Link)`
     text-decoration: none;
     padding: 0.8rem 1rem;
     border-radius: 10px;
+    &:hover {
+        background-color: #c77007;
+    }
 `
 
 function NoMatch() {
